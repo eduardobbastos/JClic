@@ -1,0 +1,57 @@
+{
+  "title": "Atividade com Folclore",
+  "author": "Eduardo Bastos (Professor II)",
+  "date": "30/07/18",
+  "langCodes": [
+    "pt"
+  ],
+  "languages": {
+    "pt": "português"
+  },
+  "areaCodes": [
+    "lleng",
+    "mat",
+    "vip"
+  ],
+  "areas": {
+    "pt": "lleng, mat, vip"
+  },
+  "levelCodes": [
+    "INF",
+    "PRI"
+  ],
+  "levels": {
+    "pt": "INF, PRI"
+  },
+  "description": {
+    "pt": ""
+  },
+  "meta_langs": [
+    "pt"
+  ],
+  "mainFile": "flc_2018_a.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "files": [
+    "barco.png",
+    "beijo.png",
+    "boto.png",
+    "boto1.png",
+    "boto3.png",
+    "boto4.png",
+    "capa.jpg",
+    "favicon.ico",
+    "flc_2018_a.jclic",
+    "flc_2018_a.jclic.js",
+    "homem.png",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "peixe.png",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "rede.png"
+  ]
+}
