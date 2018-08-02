@@ -14,14 +14,99 @@
   <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
  </settings>
  <sequence>
-  <item id="INÍCIO" name="QB001" />
+  <item id="INÍCIO" name="Video" />
+  <item id="FASE 0" name="Leitura" />
+  <item id="FASE 1" name="QB001" />
   <item id="FASE 2" name="QB002" />
   <item id="FASE 3" name="QB003" />
   <item id="FASE 4" name="QB004" />
   <item id="FASE 5" name="QB005" />
   <item id="FASE 6" name="CP006" />
+  <item name="Video" />
  </sequence>
  <activities>
+  <activity class="@panels.InformationScreen" name="Video" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>PARA VER!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="boto4.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="600.0" cellHeight="300.0" border="false">
+    <style>
+     <font family="Arial" size="30" bold="true" />
+     <color foreground="0xCC3300" background="0xFFCCCC" inactive="0xCC3300" border="0xCC3300" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <media type="PLAY_VIDEO" level="1" file="botoVideo.mpeg" stretch="false" free="true" loop="true" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Leitura">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>PARA LER!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="boto4.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="600.0" cellHeight="300.0" border="false">
+    <style>
+     <font family="Arial" size="30" bold="true" />
+     <color foreground="0xCC3300" background="0xFFCCCC" inactive="0xCC3300" border="0xCC3300" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>A LEDNDA DO BOTO.</p>
+     <p>A LENDA DO BOTO COR-DE-ROSA, OU SIMPLESMENTE A LENDA DO BOTO, É UMA LENDA DE ORIGEM INDÍGENA QUE FAZ PARTE DO FOLCLORE BRASILEIRO. ELA SURGE NA REGIÃO AMAZÔNICA, NO NORTE DO PAÍS.</p>
+    </cell>
+   </cells>
+  </activity>
   <activity class="@puzzles.ExchangePuzzle" name="QB001" code="">
    <description />
    <messages>
@@ -32,14 +117,14 @@
      </style>
      <p>DESAFIO! MONTE O QUEBRA-CABEÇA!</p>
     </cell>
-    <cell txtAlign="middle,top" avoidOverlapping="true" image="BOTO.png" type="final">
+    <cell txtAlign="middle,top" avoidOverlapping="true" type="final">
      <style>
       <font family="Arial" size="30" bold="true" />
       <color foreground="0xCC3300" background="0xFFCCCC" />
      </style>
      <p>MUITO BEM!</p>
     </cell>
-    <cell avoidOverlapping="true" image="boto3.png" type="finalError">
+    <cell avoidOverlapping="true" type="finalError">
      <style>
       <font family="Arial" size="30" bold="true" />
       <color foreground="0xCC3300" background="0xFF6666" />
@@ -131,8 +216,7 @@
     </cell>
    </messages>
    <settings margin="8" dragCells="true" report="true" reportActions="false">
-    <container bgColor="0xC0C0C0">
-     <image name="CAPA.jpg" tiled="true" />
+    <container bgColor="0xFF6666">
      <counters time="true" actions="true" score="true" />
     </container>
     <window bgColor="0xFFCC66" border="true" />
@@ -172,8 +256,7 @@
     </cell>
    </messages>
    <settings margin="8" dragCells="true" report="true" reportActions="false">
-    <container bgColor="0xC0C0C0">
-     <image name="CAPA.jpg" tiled="true" />
+    <container bgColor="0xFF6666">
      <counters time="true" actions="true" score="true" />
     </container>
     <window bgColor="0xFFCC66" border="true" />
@@ -280,8 +363,7 @@
     </cell>
    </messages>
    <settings margin="8" dragCells="true" report="true" reportActions="false">
-    <container bgColor="0xC0C0C0">
-     <image name="CAPA.jpg" tiled="true" />
+    <container bgColor="0xFF6666">
      <counters time="true" actions="true" score="true" />
     </container>
     <window bgColor="0xFFCC66" border="true" />
@@ -392,7 +474,6 @@
      <p>PEIXE - HOMEM - BARCO - BEIXO - REDE - BOTO</p>
     </helpWindow>
     <container bgColor="0xFFCCCC">
-     <image name="CAPA.jpg" tiled="true" />
      <counters time="true" actions="true" score="true" />
     </container>
     <window bgColor="0xFF9999" border="true" />
@@ -407,7 +488,7 @@
      <row>******H***</row>
      <row>***BOTO***</row>
      <row>P*****M***</row>
-     <row>*E*******A</row>
+     <row>*E****E**A</row>
      <row>BEIJO*M***</row>
      <row>A**X******</row>
      <row>R***E*****</row>
@@ -423,25 +504,23 @@
     <clue id="4">REDE</clue>
     <clue id="5">BEIJO</clue>
    </clues>
-   <cells rows="2" cols="4" cellWidth="400.0" cellHeight="600.0" border="true" id="secondary">
+   <cells rows="3" cols="2" cellWidth="394.0" cellHeight="586.0" border="false" id="secondary">
     <style transparent="true" borderStroke="0.7" markerStroke="2.7">
      <font family="Arial" size="17" bold="true" />
     </style>
-    <shaper class="@Rectangular" cols="4" rows="2" />
+    <shaper class="@Rectangular" cols="2" rows="3" />
     <cell txtAlign="middle,top" border="false" image="BOTO.png" />
     <cell image="PEIXE.png" />
     <cell image="HOMEM.png" />
     <cell image="BARCO.png" />
     <cell image="BEIJO.png" />
     <cell image="REDE.png" />
-    <cell />
-    <cell />
    </cells>
    <layout position="BA" />
   </activity>
  </activities>
  <mediaBag>
-  <media name="CAPA.jpg" file="capa.jpg" />
+  <media name="botoVideo.mpeg" file="botovideo.mpeg" />
   <media name="BARCO.png" file="barco.png" />
   <media name="BEIJO.png" file="beijo.png" />
   <media name="BOTO.png" file="boto.png" />
