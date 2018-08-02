@@ -56,8 +56,8 @@
     <window bgColor="0xC0C0C0" border="true" />
    </settings>
    <cells rows="1" cols="1" cellWidth="600.0" cellHeight="300.0" border="false">
-    <style>
-     <font family="Arial" size="30" bold="true" />
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="30" />
      <color foreground="0xCC3300" background="0xFFCCCC" inactive="0xCC3300" border="0xCC3300" />
     </style>
     <shaper class="@Rectangular" cols="1" rows="1" />
@@ -66,7 +66,8 @@
     </cell>
    </cells>
   </activity>
-  <activity class="@panels.InformationScreen" name="Leitura">
+  <activity class="@panels.InformationScreen" name="Leitura" code="">
+   <description />
    <messages>
     <cell type="initial">
      <style>
@@ -102,7 +103,7 @@
     </style>
     <shaper class="@Rectangular" cols="1" rows="1" />
     <cell>
-     <p>A LEDNDA DO BOTO.</p>
+     <p>A LENDA DO BOTO.</p>
      <p>A LENDA DO BOTO COR-DE-ROSA, OU SIMPLESMENTE A LENDA DO BOTO, É UMA LENDA DE ORIGEM INDÍGENA QUE FAZ PARTE DO FOLCLORE BRASILEIRO. ELA SURGE NA REGIÃO AMAZÔNICA, NO NORTE DO PAÍS.</p>
     </cell>
    </cells>
