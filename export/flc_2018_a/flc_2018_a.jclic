@@ -62,7 +62,7 @@
     </style>
     <shaper class="@Rectangular" cols="1" rows="1" />
     <cell>
-     <media type="PLAY_VIDEO" level="1" file="botoVideo.mpeg" stretch="false" free="true" loop="true" />
+     <media type="PLAY_VIDEO" level="1" file="botoVideo.avi" stretch="false" free="true" loop="true" autoStart="true" />
     </cell>
    </cells>
   </activity>
@@ -96,7 +96,7 @@
     </container>
     <window bgColor="0xC0C0C0" border="true" />
    </settings>
-   <cells rows="1" cols="1" cellWidth="600.0" cellHeight="300.0" border="false">
+   <cells rows="1" cols="1" cellWidth="700.0" cellHeight="307.0" border="false">
     <style>
      <font family="Arial" size="30" bold="true" />
      <color foreground="0xCC3300" background="0xFFCCCC" inactive="0xCC3300" border="0xCC3300" />
@@ -514,14 +514,14 @@
     <cell image="PEIXE.png" />
     <cell image="HOMEM.png" />
     <cell image="BARCO.png" />
-    <cell image="BEIJO.png" />
     <cell image="REDE.png" />
+    <cell image="BEIJO.png" />
    </cells>
    <layout position="BA" />
   </activity>
  </activities>
  <mediaBag>
-  <media name="botoVideo.mpeg" file="botovideo.mpeg" />
+  <media name="botoVideo.avi" file="botovideo.avi" />
   <media name="BARCO.png" file="barco.png" />
   <media name="BEIJO.png" file="beijo.png" />
   <media name="BOTO.png" file="boto.png" />
