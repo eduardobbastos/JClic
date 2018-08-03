@@ -23,9 +23,7 @@
   "levels": {
     "pt": "INF, PRI"
   },
-  "description": {
-    "pt": ""
-  },
+  "description": {},
   "meta_langs": [
     "pt"
   ],
@@ -35,11 +33,12 @@
   "files": [
     "barco.png",
     "beijo.png",
+    "boca.jpg",
     "boto.png",
     "boto1.png",
     "boto3.png",
     "boto4.png",
-    "botovideo.avi",
+    "botovideo.mpeg",
     "favicon.ico",
     "flc_2018_a.jclic",
     "flc_2018_a.jclic.js",
@@ -48,10 +47,13 @@
     "icon-72.png",
     "imsmanifest.xml",
     "index.html",
+    "oculos-resized.jpg",
+    "onibus-resized.jpg",
     "peixe.png",
     "project-cover.jpg",
     "project-thumb.jpg",
     "project.json",
-    "rede.png"
+    "rede.png",
+    "tapete.jpg"
   ]
 }

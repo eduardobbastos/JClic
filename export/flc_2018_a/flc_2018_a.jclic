@@ -21,8 +21,8 @@
   <item id="FASE 3" name="QB003" />
   <item id="FASE 4" name="QB004" />
   <item id="FASE 5" name="QB005" />
-  <item id="FASE 6" name="CP006" />
-  <item name="Video" />
+  <item id="FASE 6" name="LG07" />
+  <item id="FASE 7" name="CP006" />
  </sequence>
  <activities>
   <activity class="@panels.InformationScreen" name="Video" code="">
@@ -53,18 +53,98 @@
      <image name="boto4.png" tiled="true" />
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xC0C0C0" border="true" />
+    <window bgColor="0xC0C0C0" transparent="true" border="false" />
    </settings>
-   <cells rows="1" cols="1" cellWidth="600.0" cellHeight="300.0" border="false">
+   <cells rows="1" cols="1" cellWidth="600.0" cellHeight="400.0" border="false">
     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
      <font family="Arial" size="30" />
      <color foreground="0xCC3300" background="0xFFCCCC" inactive="0xCC3300" border="0xCC3300" />
     </style>
     <shaper class="@Rectangular" cols="1" rows="1" />
     <cell>
-     <media type="PLAY_VIDEO" level="1" file="botoVideo.avi" stretch="false" free="true" loop="true" autoStart="true" />
+     <media type="PLAY_VIDEO" level="1" file="botoVideo.mpeg" stretch="false" free="true" loop="true" autoStart="true" />
     </cell>
    </cells>
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="LG07" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>VAMOS LIGAR?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BOM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="4.6">
+     <font family="Arial" size="50" bold="true" />
+     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="1" image="boca.jpg" />
+    <cell id="2" border="true" image="oculos-resized.jpg" />
+    <cell id="3" image="tapete.jpg" />
+    <cell image="onibus-resized.jpg" />
+   </cells>
+   <cells rows="4" cols="1" cellWidth="200.0" cellHeight="150.0" border="true" id="secondary">
+    <style borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="50" bold="true" />
+     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>B</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>T</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>BOCA</p>
+    </cell>
+    <cell>
+     <p>ÓCULOS</p>
+    </cell>
+    <cell>
+     <p>TAPETE</p>
+    </cell>
+    <cell>
+     <p>ÔNIBUS</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="BA" />
   </activity>
   <activity class="@panels.InformationScreen" name="Leitura" code="">
    <description />
@@ -94,11 +174,11 @@
      <image name="boto4.png" tiled="true" />
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xC0C0C0" border="true" />
+    <window bgColor="0xC0C0C0" transparent="true" border="false" />
    </settings>
-   <cells rows="1" cols="1" cellWidth="700.0" cellHeight="307.0" border="false">
+   <cells rows="1" cols="1" cellWidth="600.0" cellHeight="350.0" border="true">
     <style>
-     <font family="Arial" size="30" bold="true" />
+     <font family="Arial" size="25" bold="true" />
      <color foreground="0xCC3300" background="0xFFCCCC" inactive="0xCC3300" border="0xCC3300" />
     </style>
     <shaper class="@Rectangular" cols="1" rows="1" />
@@ -139,7 +219,7 @@
      <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xFFCC66" border="true" />
+    <window bgColor="0xFFCC66" transparent="true" border="false" />
    </settings>
    <cells rows="3" cols="3" border="true" image="boto1.png">
     <style borderStroke="2.7" markerStroke="2.7">
@@ -180,7 +260,7 @@
      <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xFFCC66" border="true" />
+    <window bgColor="0xFFCC66" transparent="true" border="false" />
    </settings>
    <cells rows="4" cols="4" border="true" image="boto1.png">
     <style borderStroke="2.7" markerStroke="2.7">
@@ -220,7 +300,7 @@
     <container bgColor="0xFF6666">
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xFFCC66" border="true" />
+    <window bgColor="0xFFCC66" transparent="true" border="false" />
    </settings>
    <cells rows="4" cols="5" border="true" image="boto1.png">
     <style borderStroke="2.7" markerStroke="2.7">
@@ -260,7 +340,7 @@
     <container bgColor="0xFF6666">
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xFFCC66" border="true" />
+    <window bgColor="0xFFCC66" transparent="true" border="false" />
    </settings>
    <cells rows="3" cols="3" cellWidth="132.0" cellHeight="100.0" border="true" id="primary">
     <style borderStroke="2.7" markerStroke="5.0">
@@ -367,7 +447,7 @@
     <container bgColor="0xFF6666">
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xFFCC66" border="true" />
+    <window bgColor="0xFFCC66" transparent="true" border="false" />
    </settings>
    <cells rows="3" cols="3" cellWidth="132.0" cellHeight="100.0" border="true" id="primary">
     <style borderStroke="2.7" markerStroke="5.0">
@@ -477,7 +557,7 @@
     <container bgColor="0xFFCCCC">
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xFF9999" border="true" />
+    <window bgColor="0xFF9999" transparent="true" border="false" />
    </settings>
    <textGrid rows="10" columns="10" cellWidth="200.0" cellHeight="200.0" border="true">
     <style borderStroke="3.5" markerStroke="2.7">
@@ -521,7 +601,11 @@
   </activity>
  </activities>
  <mediaBag>
-  <media name="botoVideo.avi" file="botovideo.avi" />
+  <media name="boca.jpg" file="boca.jpg" />
+  <media name="oculos-resized.jpg" file="oculos-resized.jpg" />
+  <media name="onibus-resized.jpg" file="onibus-resized.jpg" />
+  <media name="tapete.jpg" file="tapete.jpg" />
+  <media name="botoVideo.mpeg" file="botovideo.mpeg" />
   <media name="BARCO.png" file="barco.png" />
   <media name="BEIJO.png" file="beijo.png" />
   <media name="BOTO.png" file="boto.png" />
