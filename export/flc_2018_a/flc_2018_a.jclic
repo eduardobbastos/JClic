@@ -22,7 +22,8 @@
   <item id="FASE 4" name="QB004" />
   <item id="FASE 5" name="QB005" />
   <item id="FASE 6" name="LG07" />
-  <item id="FASE 7" name="CP006" />
+  <item id="FASE 8" name="LG08" />
+  <item name="CP006" />
  </sequence>
  <activities>
   <activity class="@panels.InformationScreen" name="Video" code="">
@@ -262,7 +263,7 @@
     </container>
     <window bgColor="0xFFCC66" transparent="true" border="false" />
    </settings>
-   <cells rows="4" cols="4" border="true" image="boto1.png">
+   <cells rows="4" cols="4" border="true" image="boto4.png">
     <style borderStroke="2.7" markerStroke="2.7">
      <color inactive="0xCC0000" border="0xCC0000" />
     </style>
@@ -525,6 +526,86 @@
    <scramble times="31" primary="false" secondary="true" />
    <layout position="AB" />
   </activity>
+  <activity class="@associations.SimpleAssociation" name="LG08" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>VAMOS LIGAR?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BOM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="4.6">
+     <font family="Arial" size="50" bold="true" />
+     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="1" image="hqdefault.jpg" />
+    <cell id="2" border="true" image="ovelha-resized.jpg" />
+    <cell id="3" image="download.jpg" />
+    <cell image="aviao.jpg" />
+   </cells>
+   <cells rows="4" cols="1" cellWidth="200.0" cellHeight="150.0" border="true" id="secondary">
+    <style borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="50" bold="true" />
+     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>R</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>S</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>RIO</p>
+    </cell>
+    <cell>
+     <p>OVELHA</p>
+    </cell>
+    <cell>
+     <p>SARDINHA</p>
+    </cell>
+    <cell>
+     <p>AVIÃO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="BA" />
+  </activity>
   <activity class="@textGrid.WordSearch" name="CP006" code="">
    <description />
    <messages>
@@ -601,9 +682,13 @@
   </activity>
  </activities>
  <mediaBag>
+  <media name="aviao.jpg" file="aviao.jpg" />
   <media name="boca.jpg" file="boca.jpg" />
+  <media name="download.jpg" file="download.jpg" />
+  <media name="hqdefault.jpg" file="hqdefault.jpg" />
   <media name="oculos-resized.jpg" file="oculos-resized.jpg" />
   <media name="onibus-resized.jpg" file="onibus-resized.jpg" />
+  <media name="ovelha-resized.jpg" file="ovelha-resized.jpg" />
   <media name="tapete.jpg" file="tapete.jpg" />
   <media name="botoVideo.mpeg" file="botovideo.mpeg" />
   <media name="BARCO.png" file="barco.png" />
