@@ -22,11 +22,11 @@
   <item id="FASE 4" name="QB004" />
   <item id="FASE 5" name="QB005" />
   <item id="FASE 6" name="LG07" />
-  <item id="FASE 8" name="LG08" />
-  <item name="CP006" />
+  <item id="FASE 7" name="LG08" />
+  <item id="FASE 8" name="CP006" />
  </sequence>
  <activities>
-  <activity class="@panels.InformationScreen" name="Video" code="">
+  <activity class="@textGrid.WordSearch" name="CP006" code="">
    <description />
    <messages>
     <cell type="initial">
@@ -34,38 +34,71 @@
       <font family="Arial" size="40" bold="true" />
       <color foreground="0xCC3300" background="0xFFCCCC" />
      </style>
-     <p>PARA VER!</p>
+     <p>SUA VEZ! ENCONTE AS PALAVRAS!</p>
     </cell>
     <cell type="final">
      <style>
       <font family="Arial" size="30" bold="true" />
       <color foreground="0xCC3300" background="0xFFCCCC" />
      </style>
+     <p>MUITO BEM!</p>
     </cell>
     <cell type="finalError">
      <style>
       <font family="Arial" size="30" bold="true" />
       <color foreground="0xCC3300" background="0xFF6666" />
      </style>
+     <p>HUM! TENTE NOVAMENTE!</p>
     </cell>
    </messages>
-   <settings margin="8" report="false">
-    <container bgColor="0xC0C0C0">
-     <image name="boto4.png" tiled="true" />
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>PEIXE - HOMEM - BARCO - BEIXO - REDE - BOTO</p>
+    </helpWindow>
+    <container bgColor="0xFFCCCC">
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xC0C0C0" transparent="true" border="false" />
+    <window bgColor="0xFF9999" transparent="true" border="false" />
    </settings>
-   <cells rows="1" cols="1" cellWidth="600.0" cellHeight="400.0" border="false">
-    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
-     <font family="Arial" size="30" />
-     <color foreground="0xCC3300" background="0xFFCCCC" inactive="0xCC3300" border="0xCC3300" />
+   <textGrid rows="10" columns="10" cellWidth="200.0" cellHeight="200.0" border="true">
+    <style borderStroke="3.5" markerStroke="2.7">
+     <font family="Arial" size="30" bold="true" />
+     <color foreground="0xCC3300" background="0xFFCCCC" inactive="0xFFCCCC" border="0xFF6666" />
     </style>
-    <shaper class="@Rectangular" cols="1" rows="1" />
-    <cell>
-     <media type="PLAY_VIDEO" level="1" file="botoVideo.mpeg" stretch="false" free="true" loop="true" autoStart="true" />
-    </cell>
+    <text>
+     <row>REDE******</row>
+     <row>******H***</row>
+     <row>***BOTO***</row>
+     <row>P*****M***</row>
+     <row>*E****E**A</row>
+     <row>BEIJO*M***</row>
+     <row>A**X******</row>
+     <row>R***E*****</row>
+     <row>C*********</row>
+     <row>O*********</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">BOTO</clue>
+    <clue id="1">PEIXE</clue>
+    <clue id="2">HOMEM</clue>
+    <clue id="3">BARCO</clue>
+    <clue id="4">REDE</clue>
+    <clue id="5">BEIJO</clue>
+   </clues>
+   <cells rows="3" cols="2" cellWidth="394.0" cellHeight="586.0" border="false" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell txtAlign="middle,top" border="false" image="BOTO.png" />
+    <cell image="PEIXE.png" />
+    <cell image="HOMEM.png" />
+    <cell image="BARCO.png" />
+    <cell image="REDE.png" />
+    <cell image="BEIJO.png" />
    </cells>
+   <layout position="BA" />
   </activity>
   <activity class="@associations.SimpleAssociation" name="LG07" code="">
    <description />
@@ -142,6 +175,86 @@
     </cell>
     <cell>
      <p>ÔNIBUS</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="LG08" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>VAMOS LIGAR?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BOM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="4.6">
+     <font family="Arial" size="50" bold="true" />
+     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="1" image="hqdefault.jpg" />
+    <cell id="2" border="true" image="ovelha-resized.jpg" />
+    <cell id="3" image="download.jpg" />
+    <cell image="aviao.jpg" />
+   </cells>
+   <cells rows="4" cols="1" cellWidth="200.0" cellHeight="150.0" border="true" id="secondary">
+    <style borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="50" bold="true" />
+     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>R</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>S</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>RIO</p>
+    </cell>
+    <cell>
+     <p>OVELHA</p>
+    </cell>
+    <cell>
+     <p>SARDINHA</p>
+    </cell>
+    <cell>
+     <p>AVIÃO</p>
     </cell>
    </cells>
    <scramble times="31" primary="true" secondary="false" />
@@ -526,7 +639,7 @@
    <scramble times="31" primary="false" secondary="true" />
    <layout position="AB" />
   </activity>
-  <activity class="@associations.SimpleAssociation" name="LG08" code="">
+  <activity class="@panels.InformationScreen" name="Video" code="">
    <description />
    <messages>
     <cell type="initial">
@@ -534,14 +647,13 @@
       <font family="Arial" size="40" bold="true" />
       <color foreground="0xCC3300" background="0xFFCCCC" />
      </style>
-     <p>VAMOS LIGAR?</p>
+     <p>PARA VER!</p>
     </cell>
     <cell type="final">
      <style>
       <font family="Arial" size="30" bold="true" />
       <color foreground="0xCC3300" background="0xFFCCCC" />
      </style>
-     <p>MUITO BOM!</p>
     </cell>
     <cell type="finalError">
      <style>
@@ -550,135 +662,23 @@
      </style>
     </cell>
    </messages>
-   <settings margin="8" dragCells="true" report="true" reportActions="false">
+   <settings margin="8" report="false">
     <container bgColor="0xC0C0C0">
-     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <image name="boto4.png" tiled="true" />
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xFF6666" transparent="true" border="false" />
+    <window bgColor="0xC0C0C0" transparent="true" border="false" />
    </settings>
-   <cells rows="4" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
-    <style borderStroke="5.1" markerStroke="4.6">
-     <font family="Arial" size="50" bold="true" />
-     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+   <cells rows="1" cols="1" cellWidth="600.0" cellHeight="400.0" border="false">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="30" />
+     <color foreground="0xCC3300" background="0xFFCCCC" inactive="0xCC3300" border="0xCC3300" />
     </style>
-    <shaper class="@Rectangular" cols="1" rows="4" />
-    <cell id="1" image="hqdefault.jpg" />
-    <cell id="2" border="true" image="ovelha-resized.jpg" />
-    <cell id="3" image="download.jpg" />
-    <cell image="aviao.jpg" />
-   </cells>
-   <cells rows="4" cols="1" cellWidth="200.0" cellHeight="150.0" border="true" id="secondary">
-    <style borderStroke="5.0" markerStroke="5.0">
-     <font family="Arial" size="50" bold="true" />
-     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
-    </style>
-    <shaper class="@Rectangular" cols="1" rows="4" />
+    <shaper class="@Rectangular" cols="1" rows="1" />
     <cell>
-     <p>R</p>
-    </cell>
-    <cell>
-     <p>O</p>
-    </cell>
-    <cell>
-     <p>S</p>
-    </cell>
-    <cell>
-     <p>A</p>
+     <media type="PLAY_VIDEO" level="1" file="botoVideo.mpeg" stretch="false" free="true" loop="true" autoStart="true" />
     </cell>
    </cells>
-   <cells rows="3" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
-    <style />
-    <shaper class="@Rectangular" cols="1" rows="4" />
-    <cell>
-     <p>RIO</p>
-    </cell>
-    <cell>
-     <p>OVELHA</p>
-    </cell>
-    <cell>
-     <p>SARDINHA</p>
-    </cell>
-    <cell>
-     <p>AVIÃO</p>
-    </cell>
-   </cells>
-   <scramble times="31" primary="true" secondary="false" />
-   <layout position="BA" />
-  </activity>
-  <activity class="@textGrid.WordSearch" name="CP006" code="">
-   <description />
-   <messages>
-    <cell type="initial">
-     <style>
-      <font family="Arial" size="40" bold="true" />
-      <color foreground="0xCC3300" background="0xFFCCCC" />
-     </style>
-     <p>SUA VEZ! ENCONTE AS PALAVRAS!</p>
-    </cell>
-    <cell type="final">
-     <style>
-      <font family="Arial" size="30" bold="true" />
-      <color foreground="0xCC3300" background="0xFFCCCC" />
-     </style>
-     <p>MUITO BEM!</p>
-    </cell>
-    <cell type="finalError">
-     <style>
-      <font family="Arial" size="30" bold="true" />
-      <color foreground="0xCC3300" background="0xFF6666" />
-     </style>
-     <p>HUM! TENTE NOVAMENTE!</p>
-    </cell>
-   </messages>
-   <settings margin="8" report="true" reportActions="false">
-    <helpWindow showSolution="false">
-     <p>PEIXE - HOMEM - BARCO - BEIXO - REDE - BOTO</p>
-    </helpWindow>
-    <container bgColor="0xFFCCCC">
-     <counters time="true" actions="true" score="true" />
-    </container>
-    <window bgColor="0xFF9999" transparent="true" border="false" />
-   </settings>
-   <textGrid rows="10" columns="10" cellWidth="200.0" cellHeight="200.0" border="true">
-    <style borderStroke="3.5" markerStroke="2.7">
-     <font family="Arial" size="30" bold="true" />
-     <color foreground="0xCC3300" background="0xFFCCCC" inactive="0xFFCCCC" border="0xFF6666" />
-    </style>
-    <text>
-     <row>REDE******</row>
-     <row>******H***</row>
-     <row>***BOTO***</row>
-     <row>P*****M***</row>
-     <row>*E****E**A</row>
-     <row>BEIJO*M***</row>
-     <row>A**X******</row>
-     <row>R***E*****</row>
-     <row>C*********</row>
-     <row>O*********</row>
-    </text>
-   </textGrid>
-   <clues>
-    <clue id="0">BOTO</clue>
-    <clue id="1">PEIXE</clue>
-    <clue id="2">HOMEM</clue>
-    <clue id="3">BARCO</clue>
-    <clue id="4">REDE</clue>
-    <clue id="5">BEIJO</clue>
-   </clues>
-   <cells rows="3" cols="2" cellWidth="394.0" cellHeight="586.0" border="false" id="secondary">
-    <style transparent="true" borderStroke="0.7" markerStroke="2.7">
-     <font family="Arial" size="17" bold="true" />
-    </style>
-    <shaper class="@Rectangular" cols="2" rows="3" />
-    <cell txtAlign="middle,top" border="false" image="BOTO.png" />
-    <cell image="PEIXE.png" />
-    <cell image="HOMEM.png" />
-    <cell image="BARCO.png" />
-    <cell image="REDE.png" />
-    <cell image="BEIJO.png" />
-   </cells>
-   <layout position="BA" />
   </activity>
  </activities>
  <mediaBag>
