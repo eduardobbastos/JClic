@@ -1,0 +1,82 @@
+{
+  "title": "Atividade com Folclore",
+  "author": "Eduardo Bastos (Professor II)",
+  "date": "30/07/18",
+  "langCodes": [
+    "pt"
+  ],
+  "languages": {
+    "pt": "português"
+  },
+  "areaCodes": [
+    "lleng",
+    "mat",
+    "vip"
+  ],
+  "areas": {
+    "pt": "lleng, mat, vip"
+  },
+  "levelCodes": [
+    "INF",
+    "PRI"
+  ],
+  "levels": {
+    "pt": "INF, PRI"
+  },
+  "description": {},
+  "meta_langs": [
+    "pt"
+  ],
+  "mainFile": "at1_2018_a.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "files": [
+    "at1_2018_a.jclic",
+    "at1_2018_a.jclic.js",
+    "aviao-flc_2018_a.jpg",
+    "aviao.jpg",
+    "barco-flc_2018_a.png",
+    "barco.png",
+    "beijo-flc_2018_a.png",
+    "beijo.png",
+    "boca-flc_2018_a.jpg",
+    "boca.jpg",
+    "boto-flc_2018_a.png",
+    "boto.png",
+    "boto1-flc_2018_a.png",
+    "boto1.png",
+    "boto3-flc_2018_a.png",
+    "boto3.png",
+    "boto4-flc_2018_a.png",
+    "boto4.png",
+    "botovideo.mpeg",
+    "download-flc_2018_a.jpg",
+    "download.jpg",
+    "favicon.ico",
+    "flc_2018_a.jclic",
+    "flc_2018_a.jclic.js",
+    "homem-flc_2018_a.png",
+    "homem.png",
+    "hqdefault-flc_2018_a.jpg",
+    "hqdefault.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "oculos-resized-flc_2018_a.jpg",
+    "oculos-resized.jpg",
+    "onibus-resized-flc_2018_a.jpg",
+    "onibus-resized.jpg",
+    "ovelha-resized-flc_2018_a.jpg",
+    "ovelha-resized.jpg",
+    "peixe-flc_2018_a.png",
+    "peixe.png",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "rede-flc_2018_a.png",
+    "rede.png",
+    "tapete-flc_2018_a.jpg",
+    "tapete.jpg"
+  ]
+}
