@@ -1634,22 +1634,22 @@
   </activity>
  </activities>
  <mediaBag>
-  <media name="aviao.jpg" file="aviao.jpg" />
-  <media name="boca.jpg" file="boca.jpg" />
-  <media name="download.jpg" file="download.jpg" />
+  <media name="aviao.jpg" file="aviao-at1_2018_a.jpg" />
+  <media name="boca.jpg" file="boca-at1_2018_a.jpg" />
+  <media name="download.jpg" file="download-at1_2018_a.jpg" />
   <media name="frozem.jpg" file="frozem.jpg" />
-  <media name="hqdefault.jpg" file="hqdefault.jpg" />
+  <media name="hqdefault.jpg" file="hqdefault-at1_2018_a.jpg" />
   <media name="images.jpg" file="images.jpg" />
-  <media name="oculos-resized.jpg" file="oculos-resized.jpg" />
-  <media name="onibus-resized.jpg" file="onibus-resized.jpg" />
-  <media name="ovelha-resized.jpg" file="ovelha-resized.jpg" />
-  <media name="tapete.jpg" file="tapete.jpg" />
+  <media name="oculos-resized.jpg" file="oculos-resized-at1_2018_a.jpg" />
+  <media name="onibus-resized.jpg" file="onibus-resized-at1_2018_a.jpg" />
+  <media name="ovelha-resized.jpg" file="ovelha-resized-at1_2018_a.jpg" />
+  <media name="tapete.jpg" file="tapete-at1_2018_a.jpg" />
   <media name="BARCO.png" file="barco.png" />
-  <media name="BEIJO.png" file="beijo.png" />
+  <media name="BEIJO.png" file="beijo-at1_2018_a.png" />
   <media name="BOTO.png" file="boto.png" />
-  <media name="boto1.png" file="boto1.png" />
-  <media name="boto3.png" file="boto3.png" />
-  <media name="boto4.png" file="boto4.png" />
+  <media name="boto1.png" file="boto1-at1_2018_a.png" />
+  <media name="boto3.png" file="boto3-at1_2018_a.png" />
+  <media name="boto4.png" file="boto4-at1_2018_a.png" />
   <media name="HOMEM.png" file="homem.png" />
   <media name="PEIXE.png" file="peixe.png" />
   <media name="REDE.png" file="rede.png" />
