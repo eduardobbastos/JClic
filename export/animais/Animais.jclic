@@ -47,7 +47,31 @@
   <item id="FASE030" name="EncontrePalavras001" />
  </sequence>
  <activities>
-  <activity class="@textGrid.WordSearch" name="EncontrePalavras001">
+  <activity class="@panels.InformationScreen" name="Abertura" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="600.0" cellHeight="300.0" border="false">
+    <style borderStroke="5.1" markerStroke="5.0">
+     <font family="Arial" size="36" />
+     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell id="0" image="Brasa_caxias.jpg" />
+    <cell txtAlign="middle,top">
+     <p>Duque de Caxias</p>
+     <p>Escola Municipal Montese</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@textGrid.WordSearch" name="EncontrePalavras001" code="">
+   <description />
    <messages>
     <cell type="initial">
      <style>
@@ -92,7 +116,7 @@
      <row>****O*****</row>
      <row>C***R**J**</row>
      <row>O*IGUANA**</row>
-     <row>E******B**</row>
+     <row>E***J**B**</row>
      <row>LEÃOA**U**</row>
      <row>H******T**</row>
      <row>O******I**</row>
@@ -102,8 +126,8 @@
    <clues>
     <clue id="0">BORBOLETA</clue>
     <clue id="1">CORUJA</clue>
-    <clue id="2">COELHO</clue>
-    <clue id="3">IGUANA</clue>
+    <clue id="2">IGUANA</clue>
+    <clue id="3">COELHO</clue>
     <clue id="4">JABUTI</clue>
     <clue id="5">LEÃO</clue>
    </clues>
@@ -113,7 +137,7 @@
      <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
     </style>
     <shaper class="@Rectangular" cols="2" rows="3" />
-    <cell txtAlign="middle,top" border="false" image="borboleta.jpg" />
+    <cell txtAlign="middle,top" border="true" image="borboleta.jpg" />
     <cell image="coruja.jpg" />
     <cell image="iguana.jpg" />
     <cell image="coelho.jpg" />
@@ -347,7 +371,8 @@
    <scramble times="31" primary="true" />
    <layout position="BA" />
   </activity>
-  <activity class="@memory.MemoryGame" name="JogoDaMemoria001">
+  <activity class="@memory.MemoryGame" name="JogoDaMemoria001" code="">
+   <description />
    <messages>
     <cell type="initial">
      <style>
@@ -537,7 +562,8 @@
    <scramble times="31" primary="true" secondary="false" />
    <layout position="BA" />
   </activity>
-  <activity class="@associations.SimpleAssociation" name="Ligue002">
+  <activity class="@associations.SimpleAssociation" name="Ligue002" code="">
+   <description />
    <messages>
     <cell type="initial">
      <style>
@@ -601,16 +627,16 @@
     <style />
     <shaper class="@Rectangular" cols="1" rows="4" />
     <cell>
-     <p>RIO</p>
+     <p>ÁGUIA</p>
     </cell>
     <cell>
-     <p>OVELHA</p>
+     <p>CACHORRO</p>
     </cell>
     <cell>
-     <p>SARDINHA</p>
+     <p>ELEFANTE</p>
     </cell>
     <cell>
-     <p>AVIÃO</p>
+     <p>HIPOPÓTAMO</p>
     </cell>
    </cells>
    <scramble times="31" primary="true" secondary="false" />
@@ -1550,7 +1576,8 @@
    <scramble times="31" primary="true" secondary="false" />
    <layout position="BA" />
   </activity>
-  <activity class="@associations.SimpleAssociation" name="Ligue019">
+  <activity class="@associations.SimpleAssociation" name="Ligue019" code="">
+   <description />
    <messages>
     <cell type="initial">
      <style>
@@ -1607,23 +1634,23 @@
      <p>Elefante</p>
     </cell>
     <cell>
-     <p>Hipopotamo</p>
+     <p>Hipopótamo</p>
     </cell>
    </cells>
    <cells rows="3" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
     <style />
     <shaper class="@Rectangular" cols="1" rows="4" />
     <cell>
-     <p>RIO</p>
+     <p>ÁGUIA</p>
     </cell>
     <cell>
-     <p>OVELHA</p>
+     <p>CACHORRO</p>
     </cell>
     <cell>
-     <p>SARDINHA</p>
+     <p>ELEFANTE</p>
     </cell>
     <cell>
-     <p>AVIÃO</p>
+     <p>HIPOPÓTAMO</p>
     </cell>
    </cells>
    <scramble times="31" primary="true" secondary="false" />
@@ -1749,7 +1776,8 @@
    </cells>
    <scramble times="31" />
   </activity>
-  <activity class="@associations.SimpleAssociation" name="QuebraCabecaContinha001">
+  <activity class="@associations.SimpleAssociation" name="QuebraCabecaContinha001" code="">
+   <description />
    <messages>
     <cell type="initial">
      <style>
@@ -1781,8 +1809,8 @@
     <window bgColor="0xFF6666" transparent="true" border="false" />
    </settings>
    <cells rows="3" cols="3" cellWidth="132.0" cellHeight="100.0" border="true" id="primary">
-    <style borderStroke="5.1" markerStroke="4.6">
-     <font family="Arial" size="50" bold="true" />
+    <style borderStroke="3.4" markerStroke="4.6">
+     <font family="Arial" size="36" bold="true" />
      <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
     </style>
     <shaper class="@JigSaw" cols="3" rows="3" />
@@ -1815,8 +1843,8 @@
     </cell>
    </cells>
    <cells rows="3" cols="3" cellWidth="200.0" cellHeight="200.0" border="true" id="secondary">
-    <style borderStroke="5.0" markerStroke="5.0">
-     <font family="Arial" size="20" bold="true" />
+    <style borderStroke="3.4" markerStroke="4.1">
+     <font family="Arial" size="36" bold="true" />
      <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
     </style>
     <shaper class="@JigSaw" cols="3" rows="3" />
@@ -1855,7 +1883,8 @@
    <scramble times="31" primary="false" secondary="true" />
    <layout position="AB" />
   </activity>
-  <activity class="@associations.SimpleAssociation" name="QuebraCabecaContinha002">
+  <activity class="@associations.SimpleAssociation" name="QuebraCabecaContinha002" code="">
+   <description />
    <messages>
     <cell type="initial">
      <style>
@@ -1887,8 +1916,8 @@
     <window bgColor="0xFF6666" transparent="true" border="false" />
    </settings>
    <cells rows="3" cols="3" cellWidth="132.0" cellHeight="100.0" border="true" id="primary">
-    <style borderStroke="5.1" markerStroke="4.6">
-     <font family="Arial" size="50" bold="true" />
+    <style borderStroke="2.2" markerStroke="2.2">
+     <font family="Arial" size="28" bold="true" />
      <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
     </style>
     <shaper class="@JigSaw" cols="3" rows="3" />
@@ -1921,7 +1950,7 @@
     </cell>
    </cells>
    <cells rows="3" cols="3" cellWidth="200.0" cellHeight="200.0" border="true" id="secondary">
-    <style borderStroke="5.0" markerStroke="5.0">
+    <style borderStroke="2.4" markerStroke="2.2">
      <font family="Arial" size="20" bold="true" />
      <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
     </style>
@@ -1961,7 +1990,8 @@
    <scramble times="31" primary="false" secondary="true" />
    <layout position="AB" />
   </activity>
-  <activity class="@associations.SimpleAssociation" name="QuebraCabecaContinha003">
+  <activity class="@associations.SimpleAssociation" name="QuebraCabecaContinha003" code="">
+   <description />
    <messages>
     <cell type="initial">
      <style>
@@ -1993,8 +2023,8 @@
     <window bgColor="0xFF6666" transparent="true" border="false" />
    </settings>
    <cells rows="1" cols="3" cellWidth="132.0" cellHeight="100.0" border="true" id="primary">
-    <style borderStroke="5.1" markerStroke="4.6">
-     <font family="Arial" size="50" bold="true" />
+    <style borderStroke="3.1" markerStroke="4.6">
+     <font family="Arial" size="36" bold="true" />
      <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
     </style>
     <shaper class="@Rectangular" cols="3" rows="1" />
@@ -2009,7 +2039,7 @@
     </cell>
    </cells>
    <cells rows="1" cols="3" cellWidth="150.0" cellHeight="150.0" border="true" id="secondary">
-    <style borderStroke="5.0" markerStroke="5.0">
+    <style borderStroke="3.2" markerStroke="5.0">
      <font family="Arial" size="20" bold="true" />
      <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
     </style>
@@ -2030,29 +2060,6 @@
    </cells>
    <scramble times="31" primary="true" secondary="true" />
    <layout position="AB" />
-  </activity>
-  <activity class="@panels.InformationScreen" name="Abertura" code="">
-   <description />
-   <messages />
-   <settings margin="8" report="false">
-    <container bgColor="0xC0C0C0">
-     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
-     <counters time="true" actions="true" score="true" />
-    </container>
-    <window bgColor="0xFF6666" transparent="true" border="false" />
-   </settings>
-   <cells rows="2" cols="1" cellWidth="600.0" cellHeight="300.0" border="false">
-    <style borderStroke="5.1" markerStroke="5.0">
-     <font family="Arial" size="36" />
-     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
-    </style>
-    <shaper class="@Rectangular" cols="1" rows="2" />
-    <cell id="0" image="Brasa_caxias.jpg" />
-    <cell txtAlign="middle,top">
-     <p>Duque de Caxias</p>
-     <p>Escola Municipal Montese</p>
-    </cell>
-   </cells>
   </activity>
  </activities>
  <mediaBag>
