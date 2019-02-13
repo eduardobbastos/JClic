@@ -304,7 +304,8 @@
    <scramble times="31" primary="true" />
    <layout position="BA" />
   </activity>
-  <activity class="@text.WrittenAnswer" name="EscrevaPalavra003">
+  <activity class="@text.WrittenAnswer" name="EscrevaPalavra003" code="">
+   <description />
    <messages>
     <cell type="initial">
      <style>
@@ -334,16 +335,15 @@
     </container>
     <window bgColor="0xFF6666" transparent="true" border="false" />
    </settings>
-   <cells rows="4" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+   <cells rows="3" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
     <style borderStroke="5.1" markerStroke="4.6">
      <font family="Arial" size="50" bold="true" />
      <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
     </style>
-    <shaper class="@Rectangular" cols="1" rows="4" />
+    <shaper class="@Rectangular" cols="1" rows="3" />
     <cell id="1" image="aguia.jpg" />
     <cell id="2" border="true" image="cao.jpg" />
     <cell id="3" image="elefante.jpg" />
-    <cell image="hipopotamo.jpg" />
    </cells>
    <cells rows="1" cols="1" cellWidth="500.0" cellHeight="80.0" border="true" id="answers">
     <style borderStroke="5.0" markerStroke="5.0">
@@ -354,7 +354,7 @@
    </cells>
    <cells rows="3" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
     <style />
-    <shaper class="@Rectangular" cols="1" rows="4" />
+    <shaper class="@Rectangular" cols="1" rows="3" />
     <cell>
      <p>ÁGUIA</p>
     </cell>
@@ -363,9 +363,6 @@
     </cell>
     <cell>
      <p>ELEFANTE</p>
-    </cell>
-    <cell>
-     <p>HIPOPOTAMO</p>
     </cell>
    </cells>
    <scramble times="31" primary="true" />
