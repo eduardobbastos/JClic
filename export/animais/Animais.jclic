@@ -43,7 +43,6 @@
   <item id="FASE026" name="JogoDaMemoria002" />
   <item id="FASE027" name="EscrevaPalavra001" />
   <item id="FASE028" name="EscrevaPalavra002" />
-  <item id="FASE029" name="EscrevaPalavra003" />
   <item id="FASE030" name="EncontrePalavras001" />
  </sequence>
  <activities>
@@ -299,70 +298,6 @@
     </cell>
     <cell>
      <p>AVIÃO</p>
-    </cell>
-   </cells>
-   <scramble times="31" primary="true" />
-   <layout position="BA" />
-  </activity>
-  <activity class="@text.WrittenAnswer" name="EscrevaPalavra003" code="">
-   <description />
-   <messages>
-    <cell type="initial">
-     <style>
-      <font family="Arial" size="40" bold="true" />
-      <color foreground="0xCC3300" background="0xFFCCCC" />
-     </style>
-     <p>VAMOS LIGAR?</p>
-    </cell>
-    <cell type="final">
-     <style>
-      <font family="Arial" size="30" bold="true" />
-      <color foreground="0xCC3300" background="0xFFCCCC" />
-     </style>
-     <p>MUITO BOM!</p>
-    </cell>
-    <cell type="finalError">
-     <style>
-      <font family="Arial" size="30" bold="true" />
-      <color foreground="0xCC3300" background="0xFF6666" />
-     </style>
-    </cell>
-   </messages>
-   <settings margin="8" dragCells="true" report="true" reportActions="false">
-    <container bgColor="0xC0C0C0">
-     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
-     <counters time="true" actions="true" score="true" />
-    </container>
-    <window bgColor="0xFF6666" transparent="true" border="false" />
-   </settings>
-   <cells rows="3" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
-    <style borderStroke="5.1" markerStroke="4.6">
-     <font family="Arial" size="50" bold="true" />
-     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
-    </style>
-    <shaper class="@Rectangular" cols="1" rows="3" />
-    <cell id="1" image="aguia.jpg" />
-    <cell id="2" border="true" image="cao.jpg" />
-    <cell id="3" image="elefante.jpg" />
-   </cells>
-   <cells rows="1" cols="1" cellWidth="500.0" cellHeight="80.0" border="true" id="answers">
-    <style borderStroke="5.0" markerStroke="5.0">
-     <font family="Arial" size="20" bold="true" />
-     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
-    </style>
-    <shaper class="@Rectangular" cols="1" rows="1" />
-   </cells>
-   <cells rows="3" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
-    <style />
-    <shaper class="@Rectangular" cols="1" rows="3" />
-    <cell>
-     <p>ÁGUIA</p>
-    </cell>
-    <cell>
-     <p>CACHORRO</p>
-    </cell>
-    <cell>
-     <p>ELEFANTE</p>
     </cell>
    </cells>
    <scramble times="31" primary="true" />
