@@ -1,0 +1,31 @@
+{
+  "title": "DireitosHumanos",
+  "author": "Eduardo (Professor)",
+  "date": "24-03-2019",
+  "description": {
+    "pt": ""
+  },
+  "meta_langs": [
+    "pt"
+  ],
+  "mainFile": "direitoshumanos.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "files": [
+    "0001-resized.jpg",
+    "0002.png",
+    "003.png",
+    "004.png",
+    "005.png",
+    "direitoshumanos.jclic",
+    "direitoshumanos.jclic.js",
+    "favicon.ico",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json"
+  ]
+}
