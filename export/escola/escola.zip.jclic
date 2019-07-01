@@ -1,0 +1,1426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="escola" version="0.1.3">
+ <settings>
+  <title>Atividade com Folclore</title>
+  <revision description="created" date="7/30/18" />
+  <author name="Eduardo Bastos" mail="eduardobbastos@gmail.com" rol="Professor II" organization="Escola Municipal Alto Independência" />
+  <language>pt</language>
+  <descriptors area-codes="lleng, mat, vip" level-codes="INF, PRI" />
+  <skin file="@simple.xml" />
+  <meta_langs>pt</meta_langs>
+  <descriptions>
+   <description language="pt" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="FASE 1" name="QB001" />
+  <item id="FASE 4" name="QB004" />
+  <item id="FASE 5" name="QB005" />
+  <item id="FASE 6" name="LG07" />
+  <item id="FASE 7" name="LG08" />
+  <item id="FASE 8" name="CP006" />
+  <item name="LG_2" />
+  <item name="LG_4" />
+  <item name="LG_3" />
+  <item name="LG_6" />
+  <item name="LG_5" />
+  <item name="LG_7" />
+  <item name="LG_8" />
+  <item name="LG_14" />
+  <item name="LG_10" />
+  <item name="LG_11" />
+  <item name="LG_12" />
+  <item name="LG_13" />
+  <item name="LG_15" />
+  <item name="LG_17" />
+  <item name="LG_16" />
+ </sequence>
+ <activities>
+  <activity class="@textGrid.WordSearch" name="CP006" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>SUA VEZ! ENCONTE AS PALAVRAS!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BEM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+     <p>HUM! TENTE NOVAMENTE!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>PEIXE - HOMEM - BARCO - BEIXO - REDE - BOTO</p>
+    </helpWindow>
+    <container bgColor="0xFFCCCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF9999" transparent="true" border="false" />
+   </settings>
+   <textGrid rows="10" columns="10" cellWidth="200.0" cellHeight="200.0" border="true">
+    <style borderStroke="3.5" markerStroke="2.7">
+     <font family="Arial" size="30" bold="true" />
+     <color foreground="0xCC3300" background="0xFFCCCC" inactive="0xFFCCCC" border="0xFF6666" />
+    </style>
+    <text>
+     <row>CANETA****</row>
+     <row>**********</row>
+     <row>APONTADOR*</row>
+     <row>MASSINHA*T</row>
+     <row>*********E</row>
+     <row>MOCHILA**S</row>
+     <row>*********O</row>
+     <row>*********U</row>
+     <row>CADERNO**R</row>
+     <row>*********A</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">CANETA</clue>
+    <clue id="1">CADERNO</clue>
+    <clue id="2">APONTADOR</clue>
+    <clue id="3">MASSINHA</clue>
+    <clue id="4">MOCHILA</clue>
+    <clue id="5">TESOURA</clue>
+   </clues>
+   <cells rows="3" cols="2" cellWidth="394.0" cellHeight="586.0" border="false" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell txtAlign="middle,top" border="false" image="Caneta.png" />
+    <cell image="caerno.png" />
+    <cell image="apontador.png" />
+    <cell image="massinha.png" />
+    <cell image="mochila.png" />
+    <cell image="tesoura.png" />
+   </cells>
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="LG07" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>VAMOS LIGAR?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BOM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="4.6">
+     <font family="Arial" size="50" bold="true" />
+     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="1" image="borracha.png" />
+    <cell id="2" border="true" image="estojo.png" />
+    <cell id="3" image="massinha.png" />
+    <cell image="tesoura.png" />
+   </cells>
+   <cells rows="4" cols="1" cellWidth="200.0" cellHeight="150.0" border="true" id="secondary">
+    <style borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="50" bold="true" />
+     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>B</p>
+    </cell>
+    <cell>
+     <p>E</p>
+    </cell>
+    <cell>
+     <p>M</p>
+    </cell>
+    <cell>
+     <p>T</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>BORRACHA</p>
+    </cell>
+    <cell>
+     <p>ESTOJO</p>
+    </cell>
+    <cell>
+     <p>MASSINHA</p>
+    </cell>
+    <cell>
+     <p>TESOURA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="LG08" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>VAMOS LIGAR?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BOM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="4.6">
+     <font family="Arial" size="50" bold="true" />
+     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="1" image="LápisDeCor.png" />
+    <cell id="2" border="true" image="papel.png" />
+    <cell id="3" image="Régua.png" />
+    <cell image="Caneta.png" />
+   </cells>
+   <cells rows="4" cols="1" cellWidth="200.0" cellHeight="150.0" border="true" id="secondary">
+    <style borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="50" bold="true" />
+     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>L</p>
+    </cell>
+    <cell>
+     <p>P</p>
+    </cell>
+    <cell>
+     <p>R</p>
+    </cell>
+    <cell>
+     <p>C</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>LÁPIS DE COR</p>
+    </cell>
+    <cell>
+     <p>PAPEL</p>
+    </cell>
+    <cell>
+     <p>RÉGUA</p>
+    </cell>
+    <cell>
+     <p>CANETA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="LG_10" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>VAMOS LIGAR?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BOM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="3" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="4.6">
+     <font family="Arial" size="50" bold="true" />
+     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell image="estojo.png" />
+    <cell image="Caneta.png" />
+    <cell id="0" image="LápisDeCor.png" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="300.0" cellHeight="150.0" border="true" id="secondary">
+    <style borderStroke="5.0" markerStroke="2.7">
+     <font family="Arial" size="20" bold="true" />
+     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>USO PARA PINTAR COLORIDO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="LG_11" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>VAMOS LIGAR?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BOM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="3" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="4.6">
+     <font family="Arial" size="50" bold="true" />
+     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell id="0" image="mochila.png" />
+    <cell image="lancheira.png" />
+    <cell avoidOverlapping="true" image="lápisDeCera.png" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="300.0" cellHeight="150.0" border="true" id="secondary">
+    <style borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="20" bold="true" />
+     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>CARREGAR MEU MATERIAL DE ESCOLA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="LG_12" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>VAMOS LIGAR?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BOM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="4.6">
+     <font family="Arial" size="50" bold="true" />
+     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="0" image="Régua.png" />
+    <cell id="2" border="true" image="massinha.png" />
+    <cell id="3" image="estojo.png" />
+    <cell image="aviao.jpg" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="300.0" cellHeight="150.0" border="true" id="secondary">
+    <style borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="20" bold="true" />
+     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>NECESSÁRIO PARA FAZER LINHAS RETAS OU MEDIR </p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="LG_13" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>VAMOS LIGAR?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BOM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="4.6">
+     <font family="Arial" size="50" bold="true" />
+     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="0" image="massinha.png" />
+    <cell border="true" image="papel.png" />
+    <cell image="compaço.png" />
+    <cell image="lapiseira.png" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="300.0" cellHeight="150.0" border="true" id="secondary">
+    <style borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="20" bold="true" />
+     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>PODEMOS MODELAR E CRIAR VÁRIAS FORMAS DIFERENTES</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="LG_14" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>VAMOS LIGAR?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BOM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="4.6">
+     <font family="Arial" size="50" bold="true" />
+     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="0" image="tesoura.png" />
+    <cell border="true" image="lapiseira.png" />
+    <cell image="caerno.png" />
+    <cell image="estojo.png" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="300.0" cellHeight="150.0" border="true" id="secondary">
+    <style borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="20" bold="true" />
+     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>CORTAR PAPEL E FIGURAS DE REVISTAS</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="LG_15" code="" inverse="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>VAMOS LIGAR?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BOM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="4.6">
+     <font family="Arial" size="50" bold="true" />
+     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="0" image="borracha.png" />
+    <cell id="1" border="true" image="LápisDeCor.png" />
+    <cell id="2" image="estojo.png" />
+    <cell id="3" image="Régua.png" />
+   </cells>
+   <cells rows="4" cols="1" cellWidth="300.0" cellHeight="100.0" border="true" id="answers">
+    <style borderStroke="5.4" markerStroke="2.7">
+     <font family="Arial" size="28" bold="true" />
+     <color background="0xFFCCCC" border="0xFF9999" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>BORRACHA</p>
+    </cell>
+    <cell>
+     <p>LÁPIS DE COR</p>
+    </cell>
+    <cell>
+     <p>ESTOJO</p>
+    </cell>
+    <cell>
+     <p>RÉGUA</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>BORRACHA</p>
+    </cell>
+    <cell>
+     <p>LÁPIS DE COR</p>
+    </cell>
+    <cell>
+     <p>ESTOJO</p>
+    </cell>
+    <cell>
+     <p>RÉGUA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="LG_16" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>VAMOS LIGAR?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BOM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="4.6">
+     <font family="Arial" size="50" bold="true" />
+     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="1" image="Régua.png" />
+    <cell id="2" border="true" image="onibus-resized.jpg" />
+    <cell id="3" image="estojo.png" />
+    <cell image="lápisDeCera.png" />
+   </cells>
+   <cells rows="4" cols="1" cellWidth="200.0" cellHeight="150.0" border="true" id="secondary">
+    <style borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="50" bold="true" />
+     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>R</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>E</p>
+    </cell>
+    <cell>
+     <p>G</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>RÉGUA</p>
+    </cell>
+    <cell>
+     <p>ÔNIBUS</p>
+    </cell>
+    <cell>
+     <p>ESTOJO</p>
+    </cell>
+    <cell>
+     <p>GIZ DE CERA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="LG_17" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>VAMOS RESPONDER?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BOM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="4.6">
+     <font family="Arial" size="50" bold="true" />
+     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="0" image="Caneta.png" />
+    <cell id="1" border="true" image="apontador.png" />
+    <cell id="2" image="papel.png" />
+    <cell id="3" image="caerno.png" />
+   </cells>
+   <cells rows="4" cols="1" cellWidth="400.0" cellHeight="100.0" border="true" id="answers">
+    <style borderStroke="2.8" markerStroke="2.7">
+     <font family="Arial" size="36" bold="true" />
+     <color background="0xFFCCCC" border="0xFF9999" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>CANETA</p>
+    </cell>
+    <cell>
+     <p>APONTADOR</p>
+    </cell>
+    <cell>
+     <p>PAPEL</p>
+    </cell>
+    <cell>
+     <p>CADERNO</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>CANETA</p>
+    </cell>
+    <cell>
+     <p>APONTADOR</p>
+    </cell>
+    <cell>
+     <p>PAPEL</p>
+    </cell>
+    <cell>
+     <p>CADERNO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="LG_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>VAMOS LIGAR?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BOM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="3" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="4.6">
+     <font family="Arial" size="50" bold="true" />
+     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell id="0" image="boca.jpg" />
+    <cell image="BEIJO.png" />
+    <cell image="oculos-resized.jpg" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="150.0" border="true" id="secondary">
+    <style borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="50" bold="true" />
+     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>BOCA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="LG_3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>VAMOS LIGAR?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BOM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="3" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="4.6">
+     <font family="Arial" size="50" bold="true" />
+     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell image="boca.jpg" />
+    <cell id="0" image="BEIJO.png" />
+    <cell image="oculos-resized.jpg" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="150.0" border="true" id="secondary">
+    <style borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="50" bold="true" />
+     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>BEIJO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="LG_4" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>VAMOS LIGAR?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BOM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="3" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="4.6">
+     <font family="Arial" size="50" bold="true" />
+     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell image="boca.jpg" />
+    <cell image="BEIJO.png" />
+    <cell id="0" image="oculos-resized.jpg" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="150.0" border="true" id="secondary">
+    <style borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="50" bold="true" />
+     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>ÔCULOS</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="LG_5" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>VAMOS LIGAR?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BOM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="4.6">
+     <font family="Arial" size="50" bold="true" />
+     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="0" image="hqdefault.jpg" />
+    <cell id="2" border="true" image="ovelha-resized.jpg" />
+    <cell id="3" image="download.jpg" />
+    <cell image="aviao.jpg" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="150.0" border="true" id="secondary">
+    <style borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="50" bold="true" />
+     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>RIO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="LG_6" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>VAMOS LIGAR?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BOM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="4.6">
+     <font family="Arial" size="50" bold="true" />
+     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="1" image="hqdefault.jpg" />
+    <cell id="0" border="true" image="ovelha-resized.jpg" />
+    <cell id="3" image="download.jpg" />
+    <cell image="aviao.jpg" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="150.0" border="true" id="secondary">
+    <style borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="50" bold="true" />
+     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>OVELHA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="LG_7" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>VAMOS LIGAR?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BOM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="4.6">
+     <font family="Arial" size="50" bold="true" />
+     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="1" image="hqdefault.jpg" />
+    <cell border="true" image="ovelha-resized.jpg" />
+    <cell id="0" image="download.jpg" />
+    <cell image="aviao.jpg" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="150.0" border="true" id="secondary">
+    <style borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="50" bold="true" />
+     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>SARDINHA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="LG_8" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>VAMOS LIGAR?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BOM!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="400.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="4.6">
+     <font family="Arial" size="50" bold="true" />
+     <color background="0xFFCCCC" inactive="0xCC0000" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="1" image="hqdefault.jpg" />
+    <cell border="true" image="ovelha-resized.jpg" />
+    <cell image="download.jpg" />
+    <cell id="0" image="aviao.jpg" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="150.0" border="true" id="secondary">
+    <style borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="50" bold="true" />
+     <color foreground="0xFF6666" background="0xFFCCCC" inactive="0xFFCCCC" alternative="0xFFCCCC" border="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>AVIÃO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="QB001" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>DESAFIO! JOGO DA MEMÓRIA!</p>
+    </cell>
+    <cell txtAlign="middle,top" avoidOverlapping="true" type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MUITO BEM!</p>
+    </cell>
+    <cell avoidOverlapping="true" type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+     <p>OPA!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCC66" transparent="true" border="false" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="120.0" cellHeight="150.0" border="true" id="primary">
+    <style borderStroke="2.7" markerStroke="5.0">
+     <color inactive="0xCC0000" border="0xFFFF33" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="caerno.png" />
+    <cell image="estojo.png" />
+    <cell image="borracha.png" />
+    <cell image="LápisDeCor.png" />
+    <cell image="lápisDeCera.png" />
+    <cell image="massinha.png" />
+    <cell image="Régua.png" />
+    <cell image="mochila.png" />
+    <cell image="lancheira.png" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="QB004" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MOSTRE SUA HABILIDADES!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>PARABÉNS!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+     <p>TENTE NOVAMENTE!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFF6666">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCC66" transparent="true" border="false" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="132.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="2.7" markerStroke="5.0">
+     <font family="Arial" size="30" bold="true" />
+     <color foreground="0xCC3300" inactive="0xCC0000" border="0xCC0000" />
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+    </style>
+    <shaper class="@JigSaw" cols="3" rows="3" />
+    <cell>
+     <p>9+3</p>
+    </cell>
+    <cell>
+     <p>3+7</p>
+    </cell>
+    <cell>
+     <p>11+2</p>
+    </cell>
+    <cell>
+     <p>5+10</p>
+    </cell>
+    <cell>
+     <p>12+1</p>
+    </cell>
+    <cell>
+     <p>17+2</p>
+    </cell>
+    <cell>
+     <p>6+1</p>
+    </cell>
+    <cell>
+     <p>18+1</p>
+    </cell>
+    <cell>
+     <p>10+7</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="200.0" cellHeight="200.0" border="true" id="secondary">
+    <style borderStroke="3.2" markerStroke="2.7">
+     <font family="Arial" size="30" bold="true" />
+     <color foreground="0xCC3300" background="0xFFCCCC" inactive="0xCC3300" border="0xCC3300" />
+    </style>
+    <shaper class="@JigSaw" cols="3" rows="3" />
+    <cell>
+     <p>12</p>
+    </cell>
+    <cell>
+     <p>10</p>
+    </cell>
+    <cell>
+     <p>13</p>
+    </cell>
+    <cell>
+     <p>15</p>
+    </cell>
+    <cell>
+     <p>13</p>
+    </cell>
+    <cell>
+     <p>19</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>19</p>
+    </cell>
+    <cell>
+     <p>17</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" border="true" image="boto3.png" id="solvedPrimary">
+    <style />
+    <shaper class="@JigSaw" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="QB005" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>MOSTRE COMO VOCÊ É FERA!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFFCCCC" />
+     </style>
+     <p>CAMPEÃO!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="30" bold="true" />
+      <color foreground="0xCC3300" background="0xFF6666" />
+     </style>
+     <p>HUM! TENTE NOVAMENTE!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFF6666">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCC66" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="132.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="2.7" markerStroke="5.0">
+     <font family="Arial" size="30" bold="true" />
+     <color foreground="0xCC3300" inactive="0xCC0000" border="0xCC0000" />
+     <gradient source="0xFFCCCC" dest="0xFF9999" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell>
+     <p>10+2</p>
+    </cell>
+    <cell>
+     <p>12+3</p>
+    </cell>
+    <cell>
+     <p>10+7</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="3" cellWidth="150.0" cellHeight="150.0" border="true" id="secondary">
+    <style borderStroke="3.2" markerStroke="5.0">
+     <font family="Arial" size="20" bold="true" />
+     <color foreground="0xCC3300" background="0xFFCCCC" inactive="0xCC3300" border="0xCC3300" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell>
+     <p>12</p>
+    </cell>
+    <cell>
+     <p>15</p>
+    </cell>
+    <cell>
+     <p>17</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="3" border="true" image="boto4.png" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="aviao.jpg" file="aviao.jpg" />
+  <media name="boca.jpg" file="boca.jpg" />
+  <media name="download.jpg" file="download.jpg" />
+  <media name="hqdefault.jpg" file="hqdefault.jpg" />
+  <media name="oculos-resized.jpg" file="oculos-resized.jpg" />
+  <media name="onibus-resized.jpg" file="onibus-resized.jpg" />
+  <media name="ovelha-resized.jpg" file="ovelha-resized.jpg" />
+  <media name="apontador.png" file="apontador.png" />
+  <media name="BEIJO.png" file="beijo.png" />
+  <media name="borracha.png" file="borracha.png" />
+  <media name="boto3.png" file="boto3.png" />
+  <media name="boto4.png" file="boto4.png" />
+  <media name="caerno.png" file="caerno.png" />
+  <media name="Caneta.png" file="caneta.png" />
+  <media name="compaço.png" file="compaco.png" />
+  <media name="estojo.png" file="estojo.png" />
+  <media name="lancheira.png" file="lancheira.png" />
+  <media name="lapiseira.png" file="lapiseira.png" />
+  <media name="lápisDeCera.png" file="lapisdecera.png" />
+  <media name="LápisDeCor.png" file="lapisdecor.png" />
+  <media name="massinha.png" file="massinha.png" />
+  <media name="mochila.png" file="mochila.png" />
+  <media name="papel.png" file="papel.png" />
+  <media name="Régua.png" file="regua.png" />
+  <media name="tesoura.png" file="tesoura.png" />
+ </mediaBag>
+</JClicProject>
+
