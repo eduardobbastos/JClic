@@ -94,28 +94,6 @@
     <clue id="9">BRASIL</clue>
    </clues>
   </activity>
-  <activity class="@panels.InformationScreen" name="videio" code="">
-   <description />
-   <messages />
-   <settings margin="8" report="false">
-    <container bgColor="0xC0C0C0">
-     <counters time="false" actions="false" score="false" />
-    </container>
-    <window bgColor="0xC0C0C0" border="true" />
-   </settings>
-   <cells rows="1" cols="1" cellWidth="428.0" cellHeight="251.0" border="false">
-    <style borderStroke="0.7" markerStroke="5.0">
-     <font family="Arial" size="26" bold="true" />
-     <color foreground="0xCC0033" background="0xFF6666" />
-     <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
-    </style>
-    <shaper class="@Rectangular" cols="1" rows="1" />
-    <cell id="0">
-     <media type="URL" level="1" file="https://www.youtube.com/watch?v=wdK-w03Cnpk" autoStart="true" />
-     <p>Vídeo</p>
-    </cell>
-   </cells>
-  </activity>
   <activity class="@panels.InformationScreen" name="EX001" code="">
    <description />
    <messages>
@@ -494,48 +472,6 @@
    <scramble times="31" primary="true" secondary="true" />
    <layout position="AB" />
   </activity>
-  <activity class="@puzzles.DoublePuzzle" name="QB002" code="">
-   <description />
-   <messages>
-    <cell type="initial">
-     <style borderStroke="0.7" markerStroke="5.0">
-      <font family="Arial" size="22" bold="true" />
-      <color foreground="0x006666" background="0xFFFFCC" />
-     </style>
-     <p>VAMOS APRENDER BRINCANDO!</p>
-    </cell>
-    <cell type="final">
-     <style>
-      <font family="Arial" size="22" bold="true" />
-      <color foreground="0x006666" background="0xCCFF99" />
-     </style>
-     <p>MUITO BOM! </p>
-    </cell>
-    <cell type="finalError">
-     <style>
-      <font family="Arial" size="24" bold="true" />
-      <color foreground="0x006666" background="0xCCFFCC" />
-     </style>
-     <p>VOCÊ PODE TENTAR MAIS UMA VEZ!</p>
-    </cell>
-   </messages>
-   <settings margin="8" dragCells="true" report="true" reportActions="false">
-    <container bgColor="0xCCFF99">
-     <counters time="true" actions="true" score="true" />
-    </container>
-    <window bgColor="0xFFFFCC" border="true" />
-    <skin file="@simple.xml" />
-   </settings>
-   <cells rows="4" cols="4" border="true" image="0001-resized.jpg">
-    <style borderStroke="4.6" markerStroke="2.7">
-     <font family="Arial" size="17" bold="true" />
-     <color inactive="0xCCFFCC" border="0x006666" />
-    </style>
-    <shaper class="@TriangularJigSaw" cols="4" rows="4" />
-   </cells>
-   <scramble times="31" />
-   <layout position="BA" />
-  </activity>
   <activity class="@panels.Identify" name="LG_2" code="">
    <description />
    <messages>
@@ -700,6 +636,48 @@
    <scramble times="31" />
    <layout position="AB" />
   </activity>
+  <activity class="@puzzles.DoublePuzzle" name="QB002" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x006666" background="0xFFFFCC" />
+     </style>
+     <p>VAMOS APRENDER BRINCANDO!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x006666" background="0xCCFF99" />
+     </style>
+     <p>MUITO BOM! </p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x006666" background="0xCCFFCC" />
+     </style>
+     <p>VOCÊ PODE TENTAR MAIS UMA VEZ!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xCCFF99">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFCC" border="true" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="4" cols="4" border="true" image="0001-resized.jpg">
+    <style borderStroke="4.6" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" />
+     <color inactive="0xCCFFCC" border="0x006666" />
+    </style>
+    <shaper class="@TriangularJigSaw" cols="4" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="BA" />
+  </activity>
   <activity class="@puzzles.DoublePuzzle" name="QB004" code="">
    <description />
    <messages>
@@ -741,6 +719,28 @@
    </cells>
    <scramble times="31" />
    <layout position="BA" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="videio" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="428.0" cellHeight="251.0" border="false">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="26" bold="true" />
+     <color foreground="0xCC0033" background="0xFF6666" />
+     <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0">
+     <media type="URL" level="1" file="https://www.youtube.com/watch?v=wdK-w03Cnpk" autoStart="true" />
+     <p>Vídeo</p>
+    </cell>
+   </cells>
   </activity>
  </activities>
  <mediaBag>
