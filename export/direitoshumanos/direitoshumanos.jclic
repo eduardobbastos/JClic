@@ -16,8 +16,7 @@
   <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
  </settings>
  <sequence>
-  <item id="start" name="LG_3" />
-  <item name="videio" />
+  <item id="start" name="memo" />
   <item name="QB002" />
   <item name="QB004" />
   <item name="EX001" />
@@ -26,8 +25,9 @@
   <item name="LG003" />
   <item name="EX003" />
   <item name="LG004" />
-  <item name="CP" />
   <item name="LG_2" />
+  <item name="CP" />
+  <item name="videio" />
  </sequence>
  <activities>
   <activity class="@textGrid.WordSearch" name="CP" code="">
@@ -541,101 +541,6 @@
    </cells>
    <scramble times="31" primary="false" />
   </activity>
-  <activity class="@memory.MemoryGame" name="LG_3" code="">
-   <description />
-   <messages>
-    <cell type="initial">
-     <style borderStroke="0.7" markerStroke="5.0">
-      <font family="Arial" size="22" bold="true" />
-      <color foreground="0x006666" background="0xFFFFCC" />
-     </style>
-     <p>ENCONTRE A RESPOSTA CERTA!</p>
-    </cell>
-    <cell type="final">
-     <style>
-      <font family="Arial" size="22" bold="true" />
-      <color foreground="0x006666" background="0xCCFF99" />
-     </style>
-     <p>MUITO BOM! </p>
-    </cell>
-    <cell type="finalError">
-     <style>
-      <font family="Arial" size="24" bold="true" />
-      <color foreground="0x006666" background="0xCCFFCC" />
-     </style>
-     <p>VOCÊ PODE TENTAR MAIS UMA VEZ!</p>
-    </cell>
-   </messages>
-   <settings margin="8" dragCells="true" report="true" reportActions="false">
-    <container bgColor="0xCCFF99">
-     <counters time="true" actions="true" score="true" />
-    </container>
-    <window bgColor="0xFFFFCC" border="true" />
-    <skin file="@simple.xml" />
-   </settings>
-   <cells rows="4" cols="3" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
-    <style borderStroke="4.6" markerStroke="2.7">
-     <font family="Arial" size="22" bold="true" />
-     <color foreground="0x006666" background="0xCCFF99" inactive="0xCCFFCC" border="0xFFFFCC" />
-    </style>
-    <shaper class="@Rectangular" cols="3" rows="4" />
-    <cell id="0" border="true" image="zz1.png">
-     <style borderStroke="5.1" markerStroke="4.6">
-      <font family="Arial" size="22" bold="true" />
-      <color foreground="0x006666" background="0xCCFF99" border="0xFFFFCC" />
-     </style>
-    </cell>
-    <cell id="1" image="vv1.png">
-     <style borderStroke="4.5" markerStroke="4.6">
-      <font family="Arial" size="22" bold="true" />
-      <color foreground="0x006666" background="0xCCFF99" border="0xFFFFCC" />
-     </style>
-    </cell>
-    <cell image="qq1.png" />
-    <cell image="jjj.png" />
-    <cell image="qq1.png" />
-    <cell image="cc1.png" />
-    <cell image="bb1.png" />
-    <cell image="aa1.png" />
-    <cell image="0001-resized.jpg" />
-    <cell />
-    <cell />
-    <cell />
-   </cells>
-   <cells rows="4" cols="1" cellWidth="400.0" cellHeight="100.0" border="true" id="secondary">
-    <style borderStroke="5.3" markerStroke="4.6">
-     <font family="Arial" size="22" bold="true" />
-     <color foreground="0x006666" background="0xCCFF99" border="0xFFFFCC" />
-    </style>
-    <shaper class="@Rectangular" cols="3" rows="4" />
-    <cell border="true">
-     <style borderStroke="5.1" markerStroke="4.6">
-      <font family="Arial" size="22" bold="true" />
-      <color foreground="0x006666" background="0xCCFF99" border="0xFFFFCC" />
-     </style>
-     <p>Organizações das Nações Unidas</p>
-    </cell>
-    <cell>
-     <p>Constituição</p>
-    </cell>
-    <cell>
-     <p>Código.</p>
-    </cell>
-    <cell>
-     <p>Estatuto da Criança e Adolescente.</p>
-    </cell>
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-   </cells>
-   <scramble times="31" />
-   <layout position="AB" />
-  </activity>
   <activity class="@puzzles.DoublePuzzle" name="QB002" code="">
    <description />
    <messages>
@@ -674,6 +579,32 @@
      <color inactive="0xCCFFCC" border="0x006666" />
     </style>
     <shaper class="@TriangularJigSaw" cols="4" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="memo" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="zz1.png" />
+    <cell image="vv1.png" />
+    <cell image="qq1.png" />
+    <cell image="jjj.png" />
+    <cell image="cc1.png" />
+    <cell image="bb1.png" />
+    <cell image="aa1.png" />
+    <cell image="0001-resized.jpg" />
+    <cell image="0002.png" />
    </cells>
    <scramble times="31" />
    <layout position="BA" />
