@@ -16,17 +16,17 @@
   <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
  </settings>
  <sequence>
-  <item id="start" name="QB001" />
+  <item id="start" name="videio" />
   <item name="QB002" />
-  <item name="QB003" />
   <item name="QB004" />
   <item name="EX001" />
   <item name="LG001" />
   <item name="EX002" />
   <item name="LG003" />
-  <item name="CP" />
   <item name="EX003" />
   <item name="LG004" />
+  <item name="CP" />
+  <item name="LG_2" />
  </sequence>
  <activities>
   <activity class="@textGrid.WordSearch" name="CP" code="">
@@ -92,6 +92,28 @@
     <clue id="8">LEIS</clue>
     <clue id="9">BRASIL</clue>
    </clues>
+  </activity>
+  <activity class="@panels.InformationScreen" name="videio" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="428.0" cellHeight="251.0" border="false">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="26" bold="true" />
+     <color foreground="0xCC0033" background="0xFF6666" />
+     <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0">
+     <media type="URL" level="1" file="https://www.youtube.com/watch?v=wdK-w03Cnpk" />
+     <p>Vídeo</p>
+    </cell>
+   </cells>
   </activity>
   <activity class="@panels.InformationScreen" name="EX001" code="">
    <description />
@@ -471,48 +493,6 @@
    <scramble times="31" primary="true" secondary="true" />
    <layout position="AB" />
   </activity>
-  <activity class="@puzzles.DoublePuzzle" name="QB001" code="">
-   <description />
-   <messages>
-    <cell type="initial">
-     <style borderStroke="0.7" markerStroke="5.0">
-      <font family="Arial" size="22" bold="true" />
-      <color foreground="0x006666" background="0xFFFFCC" />
-     </style>
-     <p>VAMOS APRENDER BRINCANDO!</p>
-    </cell>
-    <cell type="final">
-     <style>
-      <font family="Arial" size="22" bold="true" />
-      <color foreground="0x006666" background="0xCCFF99" />
-     </style>
-     <p>MUITO BOM! </p>
-    </cell>
-    <cell type="finalError">
-     <style>
-      <font family="Arial" size="24" bold="true" />
-      <color foreground="0x006666" background="0xCCFFCC" />
-     </style>
-     <p>VOCÊ PODE TENTAR MAIS UMA VEZ!</p>
-    </cell>
-   </messages>
-   <settings margin="8" dragCells="true" report="true" reportActions="false">
-    <container bgColor="0xCCFF99">
-     <counters time="true" actions="true" score="true" />
-    </container>
-    <window bgColor="0xFFFFCC" border="true" />
-    <skin file="@simple.xml" />
-   </settings>
-   <cells rows="4" cols="5" border="true" image="0001-resized.jpg">
-    <style borderStroke="4.6" markerStroke="2.7">
-     <font family="Arial" size="17" bold="true" />
-     <color inactive="0xCCFFCC" border="0x006666" />
-    </style>
-    <shaper class="@Rectangular" cols="5" rows="4" />
-   </cells>
-   <scramble times="31" />
-   <layout position="AB" />
-  </activity>
   <activity class="@puzzles.DoublePuzzle" name="QB002" code="">
    <description />
    <messages>
@@ -555,7 +535,76 @@
    <scramble times="31" />
    <layout position="BA" />
   </activity>
-  <activity class="@puzzles.DoublePuzzle" name="QB003" code="">
+  <activity class="@panels.Identify" name="LG_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x006666" background="0xFFFFCC" />
+     </style>
+     <p>ENCONTRE A RESPOSTA CERTA!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x006666" background="0xCCFF99" />
+     </style>
+     <p>MUITO BOM! </p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x006666" background="0xCCFFCC" />
+     </style>
+     <p>VOCÊ PODE TENTAR MAIS UMA VEZ!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xCCFF99">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFCC" border="true" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="400.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="4.6" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" />
+     <color inactive="0xCCFFCC" border="0x006666" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="0" txtAlign="middle,top" border="false">
+     <style borderStroke="0.7" markerStroke="4.6">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x006666" background="0xFFFFCC" />
+     </style>
+     <p>Lei criada para proteção das mulheres?</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="4.5" markerStroke="4.6">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x006666" background="0xCCFF99" border="0xFFFFCC" />
+     </style>
+     <p>Isso não existe!</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="4.5" markerStroke="4.6">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x006666" background="0xCCFF99" border="0xFFFFCC" />
+     </style>
+     <p>Todas as mulheres não tem direitos</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="4.7" markerStroke="4.6">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x006666" background="0xCCFF99" border="0xFFFFCC" />
+     </style>
+     <p>Lei Maria da Penha</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="QB004" code="">
    <description />
    <messages>
     <cell type="initial">
@@ -592,49 +641,7 @@
      <font family="Arial" size="17" bold="true" />
      <color inactive="0xCCFFCC" border="0x006666" />
     </style>
-    <shaper class="@ClassicJigSaw" cols="5" rows="4" baseWidthFactor="0.8" toothHeightFactor="0.425" />
-   </cells>
-   <scramble times="31" />
-   <layout position="BA" />
-  </activity>
-  <activity class="@puzzles.DoublePuzzle" name="QB004" code="">
-   <description />
-   <messages>
-    <cell type="initial">
-     <style borderStroke="0.7" markerStroke="5.0">
-      <font family="Arial" size="22" bold="true" />
-      <color foreground="0x006666" background="0xFFFFCC" />
-     </style>
-     <p>VAMOS APRENDER BRINCANDO!</p>
-    </cell>
-    <cell type="final">
-     <style>
-      <font family="Arial" size="22" bold="true" />
-      <color foreground="0x006666" background="0xCCFF99" />
-     </style>
-     <p>MUITO BOM! </p>
-    </cell>
-    <cell type="finalError">
-     <style>
-      <font family="Arial" size="24" bold="true" />
-      <color foreground="0x006666" background="0xCCFFCC" />
-     </style>
-     <p>VOCÊ PODE TENTAR MAIS UMA VEZ!</p>
-    </cell>
-   </messages>
-   <settings margin="8" dragCells="true" report="true" reportActions="false">
-    <container bgColor="0xCCFF99">
-     <counters time="true" actions="true" score="true" />
-    </container>
-    <window bgColor="0xFFFFCC" border="true" />
-    <skin file="@simple.xml" />
-   </settings>
-   <cells rows="5" cols="6" border="true" image="0002.png">
-    <style borderStroke="4.6" markerStroke="2.7">
-     <font family="Arial" size="17" bold="true" />
-     <color inactive="0xCCFFCC" border="0x006666" />
-    </style>
-    <shaper class="@Rectangular" cols="6" rows="5" />
+    <shaper class="@Rectangular" cols="5" rows="4" />
    </cells>
    <scramble times="31" />
    <layout position="BA" />
