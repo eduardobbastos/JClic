@@ -111,7 +111,8 @@
     </style>
     <shaper class="@Rectangular" cols="1" rows="1" />
     <cell id="0">
-     <media type="PLAY_VIDEO" level="1" file="mariadapenha.mpeg" stretch="false" free="false" loop="true" />
+     <media type="URL" level="1" file="https://www.youtube.com/watch?v=wdK-w03Cnpk" autoStart="true" />
+     <p>Vídeo</p>
     </cell>
    </cells>
   </activity>
@@ -744,7 +745,6 @@
  </activities>
  <mediaBag>
   <media name="0001-resized.jpg" file="0001-resized.jpg" />
-  <media name="mariadapenha.mpeg" file="mariadapenha.mpeg" />
   <media name="0002.png" file="0002.png" />
   <media name="003.png" file="003.png" />
   <media name="004.png" file="004.png" />
@@ -752,8 +752,6 @@
   <media name="aa1.png" file="aa1.png" />
   <media name="bb1.png" file="bb1.png" />
   <media name="cc1.png" file="cc1.png" />
-  <media name="gg1.png" file="gg1.png" />
-  <media name="hhh1.png" file="hhh1.png" />
   <media name="jjj.png" file="jjj.png" />
   <media name="qq1.png" file="qq1.png" />
   <media name="vv1.png" file="vv1.png" />
