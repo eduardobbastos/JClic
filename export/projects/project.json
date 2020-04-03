@@ -1,9 +1,7 @@
 {
   "title": "escolaAtiva",
   "date": "03-04-2020",
-  "description": {
-    "pt": ""
-  },
+  "description": {},
   "meta_langs": [
     "pt"
   ],
@@ -20,9 +18,10 @@
     "imsmanifest.xml",
     "index.html",
     "onca-resized1.jpg",
-    "opastorzinho.avi",
+    "opastorzinho.mpeg",
     "opastorzinho.png",
     "ourico-do-mar-resized.jpg",
+    "ourico-resized.jpg",
     "ovelha.jpg",
     "ovelha.png",
     "pazt.png",
