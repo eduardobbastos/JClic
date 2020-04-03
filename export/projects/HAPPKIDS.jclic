@@ -12,20 +12,21 @@
  </settings>
  <sequence>
   <item id="start" name="at001" />
-  <item name="at_2" />
-  <item name="at_3" delay="1" />
-  <item name="at_4" delay="1" />
-  <item name="at_5" delay="1" />
-  <item name="at_6" delay="1" />
-  <item name="at_7" delay="1" />
-  <item name="at_9" delay="1" />
-  <item name="at_8" delay="1" />
-  <item name="at_10" delay="1" />
-  <item name="at_11" delay="1" />
-  <item name="at_12" delay="1" />
+  <item id="AT1" name="at_2" />
+  <item id="AT2" name="at_3" delay="1" />
+  <item id="AT3" name="at_4" delay="1" />
+  <item id="AT4" name="at_5" delay="1" />
+  <item id="AT5" name="at_6" delay="1" />
+  <item id="AT6" name="at_7" delay="1" />
+  <item id="AT7" name="at_9" delay="1" />
+  <item id="AT8" name="at_8" delay="1" />
+  <item id="AT9" name="at_10" delay="1" />
+  <item id="AT10" name="at_11" delay="1" />
+  <item id="AT11" name="at_12" delay="1" />
  </sequence>
  <activities>
-  <activity class="@panels.InformationScreen" name="at001">
+  <activity class="@panels.InformationScreen" name="at001" code="">
+   <description />
    <messages />
    <settings margin="7" report="false">
     <container bgColor="0xCC9900">
@@ -37,7 +38,7 @@
     </window>
     <skin file="@simple.xml" />
    </settings>
-   <cells rows="2" cols="1" cellWidth="371.0" cellHeight="175.0" border="true">
+   <cells rows="2" cols="1" cellWidth="371.0" cellHeight="175.0" border="false">
     <style borderStroke="0.0" markerStroke="5.0">
      <font family="Arial" size="26" bold="true" />
      <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
@@ -71,7 +72,7 @@
     </window>
     <skin file="@simple.xml" />
    </settings>
-   <cells rows="1" cols="1" cellWidth="608.0" cellHeight="400.0" border="true">
+   <cells rows="1" cols="1" cellWidth="608.0" cellHeight="400.0" border="false">
     <style borderStroke="0.0" markerStroke="5.0">
      <font family="Arial" size="26" bold="true" />
      <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
@@ -104,7 +105,7 @@
     <skin file="@simple.xml" />
    </settings>
    <cells rows="2" cols="2" cellWidth="371.0" cellHeight="175.0" border="true" id="primary">
-    <style borderStroke="0.0" markerStroke="5.0">
+    <style borderStroke="5.1" markerStroke="5.0">
      <font family="Arial" size="26" bold="true" />
      <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
     </style>
@@ -116,6 +117,7 @@
    </cells>
    <cells rows="2" cols="2" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
     <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
     <cell>
      <p>OVELHA</p>
     </cell>
@@ -157,7 +159,7 @@
      <font family="Arial" size="26" bold="true" />
      <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
     </style>
-    <shaper class="@JigSaw" cols="5" rows="1" />
+    <shaper class="@TriangularJigSaw" cols="5" rows="1" />
     <cell id="0" avoidOverlapping="true" />
     <cell id="1" />
     <cell />
@@ -167,7 +169,8 @@
    <scramble times="31" />
    <layout position="BUA" />
   </activity>
-  <activity class="@puzzles.DoublePuzzle" name="at_5">
+  <activity class="@puzzles.DoublePuzzle" name="at_5" code="">
+   <description />
    <messages>
     <cell type="initial">
      <style transparent="true" borderStroke="0.7" markerStroke="5.0">
@@ -462,7 +465,8 @@
    <scramble times="31" primary="true" secondary="true" />
    <layout position="BUA" />
   </activity>
-  <activity class="@memory.MemoryGame" name="at_11">
+  <activity class="@memory.MemoryGame" name="at_11" code="">
+   <description />
    <messages>
     <cell type="initial">
      <style transparent="true" borderStroke="0.7" markerStroke="5.0">
@@ -483,7 +487,7 @@
     <skin file="@simple.xml" />
    </settings>
    <cells rows="2" cols="2" cellWidth="268.0" cellHeight="175.0" border="true" id="primary">
-    <style borderStroke="0.0" markerStroke="5.0">
+    <style borderStroke="5.0" markerStroke="5.0">
      <font family="Arial" size="26" bold="true" />
      <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
     </style>
@@ -496,7 +500,8 @@
    <scramble times="31" />
    <layout position="AB" />
   </activity>
-  <activity class="@associations.SimpleAssociation" name="at_12">
+  <activity class="@associations.SimpleAssociation" name="at_12" code="">
+   <description />
    <messages>
     <cell type="initial">
      <style transparent="true" borderStroke="0.7" markerStroke="5.0">
@@ -528,7 +533,7 @@
     <cell image="Ourico-resized.jpg" />
    </cells>
    <cells rows="1" cols="4" cellWidth="200.0" cellHeight="100.0" border="true" id="secondary">
-    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+    <style transparent="true" borderStroke="5.0" markerStroke="5.0">
      <font family="Arial" size="28" bold="true" />
      <color foreground="0xCC0000" background="0xFFCCCC" shadow="0xCCFFFF" inactive="0xCCFFFF" alternative="0xCCFFFF" border="0xFF3333" />
     </style>
