@@ -1,70 +1,33 @@
 {
-  "title": "Atividade com Folclore",
-  "author": "Eduardo Bastos (Professor II)",
-  "date": "30-07-2018",
-  "langCodes": [
-    "pt"
-  ],
-  "languages": {
-    "pt": "português"
+  "title": "escolaAtiva",
+  "date": "03-04-2020",
+  "description": {
+    "pt": ""
   },
-  "areaCodes": [
-    "lleng",
-    "mat",
-    "vip"
-  ],
-  "areas": {
-    "pt": "lleng, mat, vip"
-  },
-  "levelCodes": [
-    "INF",
-    "PRI"
-  ],
-  "levels": {
-    "pt": "INF, PRI"
-  },
-  "description": {},
   "meta_langs": [
     "pt"
   ],
-  "mainFile": "escola.zip.jclic",
+  "mainFile": "HAPPKIDS.jclic",
   "cover": "project-cover.jpg",
   "thumbnail": "project-thumb.jpg",
   "files": [
-    "apontador.png",
-    "aviao.jpg",
-    "beijo.png",
-    "boca.jpg",
-    "borracha.png",
-    "boto3.png",
-    "boto4.png",
-    "caerno.png",
-    "caneta.png",
-    "compaco.png",
-    "download.jpg",
-    "escola.zip.jclic",
-    "escola.zip.jclic.js",
-    "estojo.png",
+    "50567719_2093968867389312_1347042868061011968_o-resized.jpg",
+    "HAPPKIDS.jclic",
+    "HAPPKIDS.jclic.js",
     "favicon.ico",
-    "hqdefault.jpg",
     "icon-192.png",
     "icon-72.png",
     "imsmanifest.xml",
     "index.html",
-    "lancheira.png",
-    "lapisdecera.png",
-    "lapisdecor.png",
-    "lapiseira.png",
-    "massinha.png",
-    "mochila.png",
-    "oculos-resized.jpg",
-    "onibus-resized.jpg",
-    "ovelha-resized.jpg",
-    "papel.png",
+    "onca-resized1.jpg",
+    "opastorzinho.avi",
+    "opastorzinho.png",
+    "ourico-do-mar-resized.jpg",
+    "ovelha.jpg",
+    "ovelha.png",
+    "pazt.png",
     "project-cover.jpg",
     "project-thumb.jpg",
-    "project.json",
-    "regua.png",
-    "tesoura.png"
+    "project.json"
   ]
 }
