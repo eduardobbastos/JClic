@@ -69,7 +69,7 @@
     <window bgColor="0xFF0000" border="true">
      <gradient source="0xFFCCCC" dest="0xCCFFFF" angle="90" cycles="2" />
     </window>
-    <skin file="@mini.xml" />
+    <skin file="@simple.xml" />
    </settings>
    <cells rows="1" cols="1" cellWidth="608.0" cellHeight="400.0" border="true">
     <style borderStroke="0.0" markerStroke="5.0">
