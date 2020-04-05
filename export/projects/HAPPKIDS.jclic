@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <JClicProject name="HAPPKIDS" version="0.1.3">
  <settings>
-  <title>escolaAtiva</title>
+  <title>HAPPY KIDS</title>
   <revision description="created" date="4/3/20" />
   <descriptors area-codes="lleng" level-codes="INF" />
-  <skin file="@default.xml" />
+  <skin file="@blue.xml" />
   <meta_langs>pt</meta_langs>
   <descriptions>
    <description language="pt" />
@@ -12,7 +12,7 @@
   <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
  </settings>
  <sequence>
-  <item id="start" name="at001" />
+  <item id="start" name="at001" delay="10" />
   <item id="AT1" name="at_2" />
   <item id="AT2" name="at_3" delay="1" />
   <item id="AT3" name="at_4" delay="1" />
@@ -21,11 +21,12 @@
   <item id="AT6" name="at_7" delay="1" />
   <item id="AT9" name="at_10" delay="1" />
   <item id="AT7" name="at_9" delay="1" />
-  <item name="at_13" />
+  <item name="at_13" delay="1" />
   <item id="AT10" name="at_11" delay="1" />
   <item id="AT8" name="at_8" delay="1" />
-  <item name="at_14" />
+  <item name="at_14" delay="1" />
   <item id="AT11" name="at_12" delay="1" />
+  <item name="at_15" />
  </sequence>
  <activities>
   <activity class="@panels.InformationScreen" name="at001" code="">
@@ -36,7 +37,7 @@
       <font family="Arial" size="24" bold="true" />
       <color foreground="0xFF0000" />
      </style>
-     <p>CLIQUE NA SETA PARA AVANÇAR OU VOLTAR!</p>
+     <p>CLIQUE NAS SETAS, NA PARTE SUPERIRO, PARA AVANÇAR OU VOLTAR!</p>
     </cell>
    </messages>
    <settings margin="7" dragCells="true" report="false">
@@ -45,10 +46,10 @@
     </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
-     <counters time="true" actions="true" score="true" />
+     <counters time="false" actions="false" score="false" />
     </container>
     <window bgColor="0xFF0000" transparent="true" border="false" />
-    <skin file="@default.xml" />
+    <skin file="@simple.xml" />
    </settings>
    <cells rows="2" cols="1" cellWidth="371.0" cellHeight="175.0" border="false">
     <style transparent="true" borderStroke="0.0" markerStroke="5.0">
@@ -56,8 +57,8 @@
      <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
     </style>
     <shaper class="@Rectangular" cols="1" rows="2" />
-    <cell avoidOverlapping="true" image="50567719_2093968867389312_1347042868061011968_o-resized.jpg" />
-    <cell txtAlign="middle,top">
+    <cell avoidOverlapping="true" image="hk.png" />
+    <cell>
      <p>Atividade</p>
      <p>Educação Infantil</p>
     </cell>
@@ -71,7 +72,7 @@
       <font family="Arial" size="24" bold="true" />
       <color foreground="0xFF0000" />
      </style>
-     <p>ENCONTRE A PALAVRINHA </p>
+     <p>QUE LETRA ESTA FALTANDO? ARRASTE A LETRA ATÉ A PALAVRA.</p>
     </cell>
    </messages>
    <settings margin="7" dragCells="true" report="false">
@@ -80,10 +81,10 @@
     </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
-     <counters time="true" actions="true" score="true" />
+     <counters time="false" actions="false" score="false" />
     </container>
     <window bgColor="0xFF0000" transparent="true" border="false" />
-    <skin file="@default.xml" />
+    <skin file="@simple.xml" />
    </settings>
    <cells rows="1" cols="4" cellWidth="122.0" cellHeight="100.0" border="true" id="primary">
     <style borderStroke="6.6" markerStroke="5.0">
@@ -126,30 +127,32 @@
       <font family="Arial" size="24" bold="true" />
       <color foreground="0xFF0000" />
      </style>
-     <p>ANIMAIS COM LETRA O</p>
+     <p>JOGO DA MEMÓRIA! ENCONTRE OS PARES!</p>
     </cell>
    </messages>
-   <settings margin="7" report="false">
+   <settings margin="7" dragCells="true" report="false">
     <helpWindow>
      <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
     </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
-     <counters time="true" actions="true" score="true" />
+     <counters time="false" actions="false" score="false" />
     </container>
     <window bgColor="0xFF0000" transparent="true" border="false" />
-    <skin file="@default.xml" />
+    <skin file="@simple.xml" />
    </settings>
-   <cells rows="2" cols="2" cellWidth="268.0" cellHeight="175.0" border="true" id="primary">
+   <cells rows="2" cols="3" cellWidth="268.0" cellHeight="175.0" border="true" id="primary">
     <style borderStroke="5.0" markerStroke="5.0">
      <font family="Arial" size="26" bold="true" />
      <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
     </style>
-    <shaper class="@Rectangular" cols="2" rows="2" />
+    <shaper class="@Rectangular" cols="3" rows="2" />
     <cell id="0" avoidOverlapping="true" image="Ovelha.jpg" />
     <cell id="1" image="Ourico-resized.jpg" />
     <cell id="0" image="Onca-resized1.jpg" />
     <cell id="0" image="Ourico-do-mar-resized.jpg" />
+    <cell image="GALIMHA.jpg" />
+    <cell image="20191224101701_1200_675_-_porco-resized.jpg" />
    </cells>
    <scramble times="31" />
    <layout position="AB" />
@@ -162,19 +165,19 @@
       <font family="Arial" size="24" bold="true" />
       <color foreground="0xFF0000" />
      </style>
-     <p>ANIMAIS COM LETRA O</p>
+     <p>ANIMAIS COM LETRA O. ARRASTE AS PALAVRAS NOS ANIMAIS CERTOS!</p>
     </cell>
    </messages>
-   <settings margin="7" report="false">
+   <settings margin="7" dragCells="true" report="false">
     <helpWindow showSolution="false">
      <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
     </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
-     <counters time="true" actions="true" score="true" />
+     <counters time="false" actions="false" score="false" />
     </container>
     <window bgColor="0xFF0000" transparent="true" border="false" />
-    <skin file="@default.xml" />
+    <skin file="@simple.xml" />
    </settings>
    <cells rows="1" cols="4" cellWidth="256.0" cellHeight="156.0" border="false" id="primary">
     <style borderStroke="0.0" markerStroke="5.0">
@@ -214,10 +217,11 @@
    <messages>
     <cell type="initial">
      <style transparent="true" borderStroke="0.7" markerStroke="5.0">
-      <font family="Arial" size="24" bold="true" />
+      <font family="Arial" size="16" bold="true" />
       <color foreground="0xFF0000" />
      </style>
-     <p>VAMOS CANTAR!</p>
+     <p>VAMOS CANTAR! CLIQUE NO CENTRO DA TELA PRA INICIAR O VÍDEO! </p>
+     <p>A SEGUIR CLIQUE NA SETA PARA IR PARA PRÓXIMA ATIVIDADE.</p>
     </cell>
    </messages>
    <settings margin="7" report="false">
@@ -226,10 +230,10 @@
     </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
-     <counters time="true" actions="true" score="true" />
+     <counters time="false" actions="false" score="false" />
     </container>
     <window bgColor="0xFF0000" transparent="true" border="false" />
-    <skin file="@default.xml" />
+    <skin file="@simple.xml" />
    </settings>
    <cells rows="1" cols="1" cellWidth="608.0" cellHeight="400.0" border="false">
     <style borderStroke="0.0" markerStroke="5.0">
@@ -250,7 +254,7 @@
       <font family="Arial" size="24" bold="true" />
       <color foreground="0xFF0000" />
      </style>
-     <p>ENCONTRE O PASTORZINHO!</p>
+     <p>ENCONTRE O PASTORZINHO! CLIQUE NA FIGURA CERTA!</p>
     </cell>
    </messages>
    <settings margin="7" report="false">
@@ -259,10 +263,10 @@
     </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
-     <counters time="true" actions="true" score="true" />
+     <counters time="false" actions="false" score="false" />
     </container>
     <window bgColor="0xFF0000" transparent="true" border="false" />
-    <skin file="@default.xml" />
+    <skin file="@simple.xml" />
    </settings>
    <cells rows="2" cols="2" cellWidth="371.0" cellHeight="175.0" border="true" id="primary">
     <style borderStroke="5.7" markerStroke="5.0">
@@ -305,7 +309,7 @@
       <font family="Arial" size="24" bold="true" />
       <color foreground="0xFF0000" />
      </style>
-     <p>MONTE A PALAVRINHA!</p>
+     <p>MONTE A PALAVRINHA! ARRASTE AS FIGURAS PARA O LOCAL CERTO!</p>
     </cell>
    </messages>
    <settings margin="7" dragCells="true" report="false">
@@ -314,10 +318,10 @@
     </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
-     <counters time="true" actions="true" score="true" />
+     <counters time="false" actions="false" score="false" />
     </container>
     <window bgColor="0xFF0000" transparent="true" border="false" />
-    <skin file="@default.xml" />
+    <skin file="@simple.xml" />
    </settings>
    <cells rows="1" cols="5" border="true" image="OPASTORZINHO.png">
     <style borderStroke="3.4" markerStroke="5.0">
@@ -342,7 +346,7 @@
       <font family="Arial" size="24" bold="true" />
       <color foreground="0xFF0000" />
      </style>
-     <p>QUEBRA CABEÇA!</p>
+     <p>QUEBRA CABEÇA! ARRASTE AS FIGURAS PARA O LOCAL CERTO!</p>
     </cell>
    </messages>
    <settings margin="7" dragCells="true" report="false">
@@ -351,10 +355,10 @@
     </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
-     <counters time="true" actions="true" score="true" />
+     <counters time="false" actions="false" score="false" />
     </container>
     <window bgColor="0xFF0000" transparent="true" border="false" />
-    <skin file="@default.xml" />
+    <skin file="@simple.xml" />
    </settings>
    <cells rows="2" cols="5" border="true" image="pazt.png">
     <style borderStroke="5.1" markerStroke="5.0">
@@ -384,7 +388,7 @@
       <font family="Arial" size="24" bold="true" />
       <color foreground="0xFF0000" />
      </style>
-     <p>QUEBRA CABEÇA!</p>
+     <p>QUEBRA CABEÇA! ARRASTE AS FIGURAS PARA O LOCAL CERTO!</p>
     </cell>
    </messages>
    <settings margin="7" dragCells="true" report="false">
@@ -393,10 +397,10 @@
     </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
-     <counters time="true" actions="true" score="true" />
+     <counters time="false" actions="false" score="false" />
     </container>
     <window bgColor="0xFF0000" transparent="true" border="false" />
-    <skin file="@default.xml" />
+    <skin file="@simple.xml" />
    </settings>
    <cells rows="3" cols="5" border="true" image="ovelha.png">
     <style borderStroke="3.0" markerStroke="5.0">
@@ -431,7 +435,7 @@
       <font family="Arial" size="24" bold="true" />
       <color foreground="0xFF0000" />
      </style>
-     <p>ENCONTRE A LETRINHA DA OVELHA</p>
+     <p>A FIGURA COMEÇA COM QUE LETRA? CLIQUE NA LETRA CERTA!</p>
     </cell>
    </messages>
    <settings margin="7" dragCells="true" report="false">
@@ -440,10 +444,10 @@
     </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
-     <counters time="true" actions="true" score="true" />
+     <counters time="false" actions="false" score="false" />
     </container>
     <window bgColor="0xFF0000" transparent="true" border="false" />
-    <skin file="@default.xml" />
+    <skin file="@simple.xml" />
    </settings>
    <cells rows="4" cols="1" cellWidth="200.0" cellHeight="100.0" border="true" id="primary">
     <style borderStroke="5.3" markerStroke="5.0">
@@ -472,7 +476,7 @@
       <font family="Arial" size="24" bold="true" />
       <color foreground="0xFF0000" />
      </style>
-     <p>ENCONTRE A PALAVRINHA </p>
+     <p>A FIGURA COMEÇA COM? ARRASTE A LETRINHA CERTA ATÉ A FIGURA.</p>
     </cell>
    </messages>
    <settings margin="7" dragCells="true" report="false">
@@ -481,10 +485,10 @@
     </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
-     <counters time="true" actions="true" score="true" />
+     <counters time="false" actions="false" score="false" />
     </container>
     <window bgColor="0xFF0000" transparent="true" border="false" />
-    <skin file="@default.xml" />
+    <skin file="@simple.xml" />
    </settings>
    <cells rows="1" cols="4" cellWidth="122.0" cellHeight="100.0" border="true" id="primary">
     <style borderStroke="6.4" markerStroke="5.0">
@@ -524,10 +528,10 @@
    <messages>
     <cell type="initial">
      <style transparent="true" borderStroke="0.7" markerStroke="5.0">
-      <font family="Arial" size="24" bold="true" />
+      <font family="Arial" size="16" bold="true" />
       <color foreground="0xFF0000" />
      </style>
-     <p>ENCONTRE A PALAVRINHA </p>
+     <p>ENCONTRE A PALAVRINHA. ARRASTE A PALAVRA ATÉ A FIGURA.</p>
     </cell>
    </messages>
    <settings margin="7" dragCells="true" report="false">
@@ -536,10 +540,10 @@
     </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
-     <counters time="true" actions="true" score="true" />
+     <counters time="false" actions="false" score="false" />
     </container>
     <window bgColor="0xFF0000" transparent="true" border="false" />
-    <skin file="@default.xml" />
+    <skin file="@simple.xml" />
    </settings>
    <cells rows="3" cols="1" cellWidth="122.0" cellHeight="100.0" border="true" id="primary">
     <style borderStroke="5.8" markerStroke="5.0">
@@ -570,18 +574,6 @@
      </style>
     </cell>
    </cells>
-   <cells rows="3" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
-    <style />
-    <shaper class="@Rectangular" cols="1" rows="3" />
-    <cell image="Ovelha.jpg">
-     <style borderStroke="0.7" markerStroke="5.0">
-      <font family="Arial" size="24" />
-      <color foreground="0xCC0000" background="0xCCFFFF" />
-     </style>
-    </cell>
-    <cell />
-    <cell />
-   </cells>
    <scramble times="31" primary="true" secondary="true" />
    <layout position="BA" />
   </activity>
@@ -602,17 +594,17 @@
     </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
-     <counters time="true" actions="true" score="true" />
+     <counters time="false" actions="false" score="false" />
     </container>
     <window bgColor="0xFF0000" transparent="true" border="false" />
-    <skin file="@default.xml" />
+    <skin file="@simple.xml" />
    </settings>
-   <cells rows="2" cols="3" cellWidth="397.0" cellHeight="146.0" border="true" id="primary">
+   <cells rows="3" cols="2" cellWidth="397.0" cellHeight="146.0" border="true" id="primary">
     <style borderStroke="6.1" markerStroke="5.0">
      <font family="Arial" size="26" bold="true" />
      <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
     </style>
-    <shaper class="@Rectangular" cols="3" rows="2" />
+    <shaper class="@Rectangular" cols="2" rows="3" />
     <cell id="0" image="Onca-resized1.jpg" />
     <cell id="1" image="Ovelha.jpg" />
     <cell id="0" image="Ourico-resized.jpg" />
@@ -622,6 +614,7 @@
    </cells>
    <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
     <style />
+    <shaper class="@Rectangular" cols="2" rows="3" />
     <cell>
      <p>ONÇA</p>
     </cell>
@@ -652,12 +645,10 @@
     </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
-     <counters time="true" actions="true" score="true" />
+     <counters time="false" actions="false" score="false" />
     </container>
-    <window bgColor="0xFF0000" transparent="true" border="false">
-     <gradient source="0xFFCCCC" dest="0xCCFFFF" angle="90" cycles="2" />
-    </window>
-    <skin file="@default.xml" />
+    <window bgColor="0xFF0000" transparent="true" border="false" />
+    <skin file="@simple.xml" />
    </settings>
    <cells rows="1" cols="4" cellWidth="122.0" cellHeight="100.0" border="true" id="primary">
     <style borderStroke="6.6" markerStroke="5.0">
@@ -692,10 +683,41 @@
    <scramble times="31" primary="true" secondary="true" />
    <layout position="BUA" />
   </activity>
+  <activity class="@panels.InformationScreen" name="at_15" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <p>CLIQUE NAS SETAS, NA PARTE SUPERIRO, PARA AVANÇAR OU VOLTAR!</p>
+    </cell>
+   </messages>
+   <settings margin="7" dragCells="true" report="false">
+    <helpWindow>
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
+    <container bgColor="0xCC9900">
+     <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="371.0" cellHeight="175.0" border="false">
+    <style transparent="true" borderStroke="0.0" markerStroke="5.0">
+     <font family="Arial" size="26" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell avoidOverlapping="true" image="ETgx9yhXsAIq52J-resized.jpg" />
+   </cells>
+  </activity>
  </activities>
  <mediaBag>
   <media name="20191224101701_1200_675_-_porco-resized.jpg" file="20191224101701_1200_675_-_porco-resized.jpg" />
-  <media name="50567719_2093968867389312_1347042868061011968_o-resized.jpg" file="50567719_2093968867389312_1347042868061011968_o-resized.jpg" />
+  <media name="ETgx9yhXsAIq52J-resized.jpg" file="etgx9yhxsaiq52j-resized.jpg" />
   <media name="GALIMHA.jpg" file="galimha.jpg" />
   <media name="MACACO.jpg" file="macaco.jpg" />
   <media name="Onca-resized1.jpg" file="onca-resized1.jpg" />
@@ -703,6 +725,7 @@
   <media name="Ourico-resized.jpg" file="ourico-resized.jpg" />
   <media name="Ovelha.jpg" file="ovelha.jpg" />
   <media name="opastorzinho.mpeg" file="opastorzinho.mpeg" />
+  <media name="hk.png" file="hk.png" />
   <media name="OPASTORZINHO.png" file="opastorzinho.png" />
   <media name="ovelha.png" file="ovelha.png" />
   <media name="pazt.png" file="pazt.png" />
