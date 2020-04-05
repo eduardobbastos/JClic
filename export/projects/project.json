@@ -1,7 +1,21 @@
 {
   "title": "escolaAtiva",
   "date": "03-04-2020",
-  "description": {},
+  "areaCodes": [
+    "lleng"
+  ],
+  "areas": {
+    "pt": "lleng"
+  },
+  "levelCodes": [
+    "INF"
+  ],
+  "levels": {
+    "pt": "INF"
+  },
+  "description": {
+    "pt": ""
+  },
   "meta_langs": [
     "pt"
   ],

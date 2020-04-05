@@ -3,7 +3,8 @@
  <settings>
   <title>escolaAtiva</title>
   <revision description="created" date="4/3/20" />
-  <descriptors />
+  <descriptors area-codes="lleng" level-codes="INF" />
+  <skin file="@default.xml" />
   <meta_langs>pt</meta_langs>
   <descriptions>
    <description language="pt" />
@@ -38,14 +39,15 @@
      <p>CLIQUE NA SETA PARA AVANÇAR OU VOLTAR!</p>
     </cell>
    </messages>
-   <settings margin="7" report="false">
+   <settings margin="7" dragCells="true" report="false">
+    <helpWindow>
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xFF0000" transparent="true" border="false">
-     <gradient source="0xFFCCCC" dest="0xCCFFFF" angle="90" cycles="2" />
-    </window>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
     <skin file="@default.xml" />
    </settings>
    <cells rows="2" cols="1" cellWidth="371.0" cellHeight="175.0" border="false">
@@ -73,13 +75,14 @@
     </cell>
    </messages>
    <settings margin="7" dragCells="true" report="false">
+    <helpWindow showSolution="false">
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xFF0000" transparent="true" border="false">
-     <gradient source="0xFFCCCC" dest="0xCCFFFF" angle="90" cycles="2" />
-    </window>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
     <skin file="@default.xml" />
    </settings>
    <cells rows="1" cols="4" cellWidth="122.0" cellHeight="100.0" border="true" id="primary">
@@ -127,13 +130,14 @@
     </cell>
    </messages>
    <settings margin="7" report="false">
+    <helpWindow>
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xFF0000" transparent="true" border="false">
-     <gradient source="0xFFCCCC" dest="0xCCFFFF" angle="90" cycles="2" />
-    </window>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
     <skin file="@default.xml" />
    </settings>
    <cells rows="2" cols="2" cellWidth="268.0" cellHeight="175.0" border="true" id="primary">
@@ -162,13 +166,14 @@
     </cell>
    </messages>
    <settings margin="7" report="false">
+    <helpWindow showSolution="false">
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xFF0000" transparent="true" border="false">
-     <gradient source="0xFFCCCC" dest="0xCCFFFF" angle="90" cycles="2" />
-    </window>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
     <skin file="@default.xml" />
    </settings>
    <cells rows="1" cols="4" cellWidth="256.0" cellHeight="156.0" border="false" id="primary">
@@ -204,7 +209,8 @@
    <scramble times="31" primary="true" secondary="true" />
    <layout position="AUB" />
   </activity>
-  <activity class="@panels.InformationScreen" name="at_2">
+  <activity class="@panels.InformationScreen" name="at_2" code="">
+   <description />
    <messages>
     <cell type="initial">
      <style transparent="true" borderStroke="0.7" markerStroke="5.0">
@@ -215,13 +221,14 @@
     </cell>
    </messages>
    <settings margin="7" report="false">
+    <helpWindow>
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xFF0000" transparent="true" border="false">
-     <gradient source="0xFFCCCC" dest="0xCCFFFF" angle="90" cycles="2" />
-    </window>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
     <skin file="@default.xml" />
    </settings>
    <cells rows="1" cols="1" cellWidth="608.0" cellHeight="400.0" border="false">
@@ -247,13 +254,14 @@
     </cell>
    </messages>
    <settings margin="7" report="false">
+    <helpWindow>
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xFF0000" transparent="true" border="false">
-     <gradient source="0xFFCCCC" dest="0xCCFFFF" angle="90" cycles="2" />
-    </window>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
     <skin file="@default.xml" />
    </settings>
    <cells rows="2" cols="2" cellWidth="371.0" cellHeight="175.0" border="true" id="primary">
@@ -301,13 +309,14 @@
     </cell>
    </messages>
    <settings margin="7" dragCells="true" report="false">
+    <helpWindow showSolution="false">
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xFF0000" transparent="true" border="false">
-     <gradient source="0xFFCCCC" dest="0xCCFFFF" angle="90" cycles="2" />
-    </window>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
     <skin file="@default.xml" />
    </settings>
    <cells rows="1" cols="5" border="true" image="OPASTORZINHO.png">
@@ -337,13 +346,14 @@
     </cell>
    </messages>
    <settings margin="7" dragCells="true" report="false">
+    <helpWindow showSolution="false">
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xFF0000" transparent="true" border="false">
-     <gradient source="0xFFCCCC" dest="0xCCFFFF" angle="90" cycles="2" />
-    </window>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
     <skin file="@default.xml" />
    </settings>
    <cells rows="2" cols="5" border="true" image="pazt.png">
@@ -378,13 +388,14 @@
     </cell>
    </messages>
    <settings margin="7" dragCells="true" report="false">
+    <helpWindow showSolution="false">
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xFF0000" transparent="true" border="false">
-     <gradient source="0xFFCCCC" dest="0xCCFFFF" angle="90" cycles="2" />
-    </window>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
     <skin file="@default.xml" />
    </settings>
    <cells rows="3" cols="5" border="true" image="ovelha.png">
@@ -424,13 +435,14 @@
     </cell>
    </messages>
    <settings margin="7" dragCells="true" report="false">
+    <helpWindow>
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xFF0000" transparent="true" border="false">
-     <gradient source="0xFFCCCC" dest="0xCCFFFF" angle="90" cycles="2" />
-    </window>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
     <skin file="@default.xml" />
    </settings>
    <cells rows="4" cols="1" cellWidth="200.0" cellHeight="100.0" border="true" id="primary">
@@ -464,13 +476,14 @@
     </cell>
    </messages>
    <settings margin="7" dragCells="true" report="false">
+    <helpWindow showSolution="false">
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xFF0000" transparent="true" border="false">
-     <gradient source="0xFFCCCC" dest="0xCCFFFF" angle="90" cycles="2" />
-    </window>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
     <skin file="@default.xml" />
    </settings>
    <cells rows="1" cols="4" cellWidth="122.0" cellHeight="100.0" border="true" id="primary">
@@ -518,13 +531,14 @@
     </cell>
    </messages>
    <settings margin="7" dragCells="true" report="false">
+    <helpWindow showSolution="false">
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xFF0000" transparent="true" border="false">
-     <gradient source="0xFFCCCC" dest="0xCCFFFF" angle="90" cycles="2" />
-    </window>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
     <skin file="@default.xml" />
    </settings>
    <cells rows="3" cols="1" cellWidth="122.0" cellHeight="100.0" border="true" id="primary">
@@ -583,13 +597,14 @@
     </cell>
    </messages>
    <settings margin="7" dragCells="true" report="false">
+    <helpWindow>
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
      <counters time="true" actions="true" score="true" />
     </container>
-    <window bgColor="0xFF0000" transparent="true" border="false">
-     <gradient source="0xFFCCCC" dest="0xCCFFFF" angle="90" cycles="2" />
-    </window>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
     <skin file="@default.xml" />
    </settings>
    <cells rows="2" cols="3" cellWidth="397.0" cellHeight="146.0" border="true" id="primary">
@@ -605,7 +620,20 @@
     <cell id="0" image="MACACO.jpg" />
     <cell id="1" image="20191224101701_1200_675_-_porco-resized.jpg" />
    </cells>
-   <scramble times="31" primary="false" />
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <cell>
+     <p>ONÇA</p>
+    </cell>
+    <cell>
+     <p>OVELHA</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="true" />
   </activity>
   <activity class="@associations.ComplexAssociation" name="at_9" code="">
    <description />
@@ -619,6 +647,9 @@
     </cell>
    </messages>
    <settings margin="7" dragCells="true" report="false">
+    <helpWindow showSolution="false">
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
     <container bgColor="0xCC9900">
      <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
      <counters time="true" actions="true" score="true" />
