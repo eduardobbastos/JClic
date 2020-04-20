@@ -1,0 +1,58 @@
+{
+  "title": "HAPPY KIDS",
+  "date": "03-04-2020",
+  "areaCodes": [
+    "lleng"
+  ],
+  "areas": {
+    "pt": "lleng"
+  },
+  "levelCodes": [
+    "INF"
+  ],
+  "levels": {
+    "pt": "INF"
+  },
+  "description": {},
+  "meta_langs": [
+    "pt"
+  ],
+  "mainFile": "HAPPKIDS.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "files": [
+    "0004.png",
+    "005.png",
+    "HAPPKIDS.jclic",
+    "HAPPKIDS.jclic.js",
+    "escova.png",
+    "etgx9yhxsaiq52j-resized.jpg",
+    "favicon.ico",
+    "hk.png",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "limpo-resized.jpg",
+    "paicebolinha-resized.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "sabonete.png",
+    "screenshot_at_abr_20_10-02-46.png",
+    "screenshot_at_abr_20_10-03-19.png",
+    "screenshot_at_abr_20_10-03-32.png",
+    "screenshot_at_abr_20_10-03-43.png",
+    "screenshot_at_abr_20_10-03-58.png",
+    "screenshot_at_abr_20_10-04-08.png",
+    "screenshot_at_abr_20_10-04-43.png",
+    "screenshot_at_abr_20_10-05-32.png",
+    "sujo.png",
+    "t001-resized.jpg",
+    "t002-resized.jpg",
+    "t005-resized2.jpg",
+    "toalha.png",
+    "turma_da_monica___hoje_vou_tomar_um_banho___.mpeg",
+    "xampoo.png"
+  ]
+}
