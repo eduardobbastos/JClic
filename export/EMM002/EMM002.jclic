@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="EMM002" version="0.1.3">
+ <settings>
+  <title>Pastor</title>
+  <revision description="created" date="4/3/20" />
+  <descriptors area-codes="lleng" level-codes="INF" />
+  <skin file="@blue.xml" />
+  <meta_langs>pt</meta_langs>
+  <descriptions>
+   <description language="pt" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="at001" delay="10" />
+  <item id="AT1" name="at_2" />
+  <item id="AT2" name="at_3" delay="1" />
+  <item id="AT3" name="at_4" delay="1" />
+  <item id="AT4" name="at_5" delay="1" />
+  <item id="AT5" name="at_6" delay="1" />
+  <item id="AT6" name="at_7" delay="1" />
+  <item id="AT9" name="at_10" delay="1" />
+  <item id="AT7" name="at_9" delay="1" />
+  <item name="at_13" delay="1" />
+  <item id="AT10" name="at_11" delay="1" />
+  <item id="AT8" name="at_8" delay="1" />
+  <item name="at_14" delay="1" />
+  <item id="AT11" name="at_12" delay="1" />
+  <item name="at_15" />
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="at001" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <p>CLIQUE NAS SETAS, NA PARTE SUPERIRO, PARA AVANÇAR OU VOLTAR!</p>
+    </cell>
+   </messages>
+   <settings margin="7" dragCells="true" report="false">
+    <helpWindow>
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
+    <container bgColor="0xCC9900">
+     <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="371.0" cellHeight="175.0" border="false">
+    <style transparent="true" borderStroke="0.0" markerStroke="5.0">
+     <font family="Arial" size="26" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell avoidOverlapping="true" image="duque-de-caxias-resized.jpg" />
+    <cell>
+     <p>Atividade</p>
+     <p>Escola Municipal Montese</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="at_10" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <p>QUE LETRA ESTA FALTANDO? ARRASTE A LETRA ATÉ A PALAVRA.</p>
+    </cell>
+   </messages>
+   <settings margin="7" dragCells="true" report="false">
+    <helpWindow showSolution="false">
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
+    <container bgColor="0xCC9900">
+     <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="1" cols="4" cellWidth="122.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="6.6" markerStroke="5.0">
+     <font family="Arial" size="26" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>E</p>
+    </cell>
+    <cell id="1">
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>I</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="2" cellWidth="200.0" cellHeight="200.0" border="false" id="secondary">
+    <style transparent="true" borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="28" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" shadow="0xCCFFFF" inactive="0xCCFFFF" alternative="0xCCFFFF" border="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell image="Ovelha.jpg" />
+    <cell>
+     <p>__VELHA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BUA" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="at_11" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <p>JOGO DA MEMÓRIA! ENCONTRE OS PARES!</p>
+    </cell>
+   </messages>
+   <settings margin="7" dragCells="true" report="false">
+    <helpWindow>
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
+    <container bgColor="0xCC9900">
+     <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="268.0" cellHeight="175.0" border="true" id="primary">
+    <style borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="26" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell id="0" avoidOverlapping="true" image="Ovelha.jpg" />
+    <cell id="1" image="Ourico-resized.jpg" />
+    <cell id="0" image="Onca-resized1.jpg" />
+    <cell id="0" image="Ourico-do-mar-resized.jpg" />
+    <cell image="GALIMHA.jpg" />
+    <cell image="20191224101701_1200_675_-_porco-resized.jpg" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="at_12" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <p>ANIMAIS COM LETRA O. ARRASTE AS PALAVRAS NOS ANIMAIS CERTOS!</p>
+    </cell>
+   </messages>
+   <settings margin="7" dragCells="true" report="false">
+    <helpWindow showSolution="false">
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
+    <container bgColor="0xCC9900">
+     <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="1" cols="4" cellWidth="256.0" cellHeight="156.0" border="false" id="primary">
+    <style borderStroke="0.0" markerStroke="5.0">
+     <font family="Arial" size="26" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="Onca-resized1.jpg" />
+    <cell image="Ourico-do-mar-resized.jpg" />
+    <cell image="Ovelha.jpg" />
+    <cell image="Ourico-resized.jpg" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="200.0" cellHeight="100.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="28" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" shadow="0xCCFFFF" inactive="0xCCFFFF" alternative="0xCCFFFF" border="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>ONÇA</p>
+    </cell>
+    <cell>
+     <p>OURIÇO DO MAR</p>
+    </cell>
+    <cell>
+     <p>OVELHA</p>
+    </cell>
+    <cell>
+     <p>OURIÇO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="at_13" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <p>A FIGURA COMEÇA COM? ARRASTE A LETRINHA CERTA ATÉ A FIGURA.</p>
+    </cell>
+   </messages>
+   <settings margin="7" dragCells="true" report="false">
+    <helpWindow showSolution="false">
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
+    <container bgColor="0xCC9900">
+     <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="1" cols="4" cellWidth="122.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="6.4" markerStroke="5.0">
+     <font family="Arial" size="26" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>E</p>
+    </cell>
+    <cell>
+     <p>I</p>
+    </cell>
+    <cell id="1">
+     <p>A</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="2" cellWidth="200.0" cellHeight="200.0" border="false" id="secondary">
+    <style transparent="true" borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="28" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" shadow="0xCCFFFF" inactive="0xCCFFFF" alternative="0xCCFFFF" border="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell image="Ovelha.jpg" />
+    <cell>
+     <p>OVELH__</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BUA" />
+  </activity>
+  <activity class="@panels.Identify" name="at_14" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <p>ENCONTRE OS ANIMAIS DA FAZENDA</p>
+    </cell>
+   </messages>
+   <settings margin="7" dragCells="true" report="false">
+    <helpWindow>
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
+    <container bgColor="0xCC9900">
+     <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="3" cols="2" cellWidth="397.0" cellHeight="146.0" border="true" id="primary">
+    <style borderStroke="6.1" markerStroke="5.0">
+     <font family="Arial" size="26" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell id="0" image="Onca-resized1.jpg" />
+    <cell id="1" image="Ovelha.jpg" />
+    <cell id="0" image="Ourico-resized.jpg" />
+    <cell id="1" image="GALIMHA.jpg" />
+    <cell id="0" image="MACACO.jpg" />
+    <cell id="1" image="20191224101701_1200_675_-_porco-resized.jpg" />
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <p>ONÇA</p>
+    </cell>
+    <cell>
+     <p>OVELHA</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="at_15" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <p>CLIQUE NAS SETAS, NA PARTE SUPERIRO, PARA AVANÇAR OU VOLTAR!</p>
+    </cell>
+   </messages>
+   <settings margin="7" dragCells="true" report="false">
+    <helpWindow>
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
+    <container bgColor="0xCC9900">
+     <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="371.0" cellHeight="175.0" border="false">
+    <style transparent="true" borderStroke="0.0" markerStroke="5.0">
+     <font family="Arial" size="26" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell avoidOverlapping="true" image="ETgx9yhXsAIq52J-resized.jpg" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="at_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="16" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <p>VAMOS CANTAR! CLIQUE NO CENTRO DA TELA PRA INICIAR O VÍDEO! </p>
+     <p>A SEGUIR CLIQUE NA SETA PARA IR PARA PRÓXIMA ATIVIDADE.</p>
+    </cell>
+   </messages>
+   <settings margin="7" report="false">
+    <helpWindow>
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
+    <container bgColor="0xCC9900">
+     <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="608.0" cellHeight="400.0" border="false">
+    <style borderStroke="0.0" markerStroke="5.0">
+     <font family="Arial" size="26" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell avoidOverlapping="true">
+     <media type="PLAY_VIDEO" level="0" file="opastorzinho.mpeg" stretch="false" free="false" autoStart="true" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.Identify" name="at_3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <p>ENCONTRE O PASTORZINHO! CLIQUE NA FIGURA CERTA!</p>
+    </cell>
+   </messages>
+   <settings margin="7" report="false">
+    <helpWindow>
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
+    <container bgColor="0xCC9900">
+     <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="371.0" cellHeight="175.0" border="true" id="primary">
+    <style borderStroke="5.7" markerStroke="5.0">
+     <font family="Arial" size="26" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="0" avoidOverlapping="true" image="Ovelha.jpg" />
+    <cell id="1" image="pazt.png" />
+    <cell id="0" image="Onca-resized1.jpg" />
+    <cell id="0" image="Ourico-do-mar-resized.jpg" />
+   </cells>
+   <cells rows="2" cols="2" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style transparent="true" borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="28" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" shadow="0xCCFFFF" inactive="0xCCFFFF" alternative="0xCCFFFF" border="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell>
+     <p>OVELHA</p>
+    </cell>
+    <cell>
+     <media type="UNKNOWN" level="1" />
+     <p>O PASTORZINHO</p>
+    </cell>
+    <cell>
+     <p>ONÇA</p>
+    </cell>
+    <cell>
+     <p>OURIÇO DO MAR</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="at_4" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <p>MONTE A PALAVRINHA! ARRASTE AS FIGURAS PARA O LOCAL CERTO!</p>
+    </cell>
+   </messages>
+   <settings margin="7" dragCells="true" report="false">
+    <helpWindow showSolution="false">
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
+    <container bgColor="0xCC9900">
+     <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="1" cols="5" border="true" image="OPASTORZINHO.png">
+    <style borderStroke="3.4" markerStroke="5.0">
+     <font family="Arial" size="26" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
+    </style>
+    <shaper class="@TriangularJigSaw" cols="5" rows="1" />
+    <cell id="0" avoidOverlapping="true" />
+    <cell id="1" />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+   <layout position="BUA" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="at_5" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <p>QUEBRA CABEÇA! ARRASTE AS FIGURAS PARA O LOCAL CERTO!</p>
+    </cell>
+   </messages>
+   <settings margin="7" dragCells="true" report="false">
+    <helpWindow showSolution="false">
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
+    <container bgColor="0xCC9900">
+     <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="2" cols="5" border="true" image="pazt.png">
+    <style borderStroke="5.1" markerStroke="5.0">
+     <font family="Arial" size="26" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell id="0" avoidOverlapping="true" />
+    <cell id="1" />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+   <layout position="BUA" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="at_6" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <p>QUEBRA CABEÇA! ARRASTE AS FIGURAS PARA O LOCAL CERTO!</p>
+    </cell>
+   </messages>
+   <settings margin="7" dragCells="true" report="false">
+    <helpWindow showSolution="false">
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
+    <container bgColor="0xCC9900">
+     <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="3" cols="5" border="true" image="ovelha.png">
+    <style borderStroke="3.0" markerStroke="5.0">
+     <font family="Arial" size="26" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
+    </style>
+    <shaper class="@TriangularJigSaw" cols="5" rows="3" />
+    <cell id="0" avoidOverlapping="true" />
+    <cell id="1" />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+   <layout position="BUA" />
+  </activity>
+  <activity class="@panels.Identify" name="at_7" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <p>A FIGURA COMEÇA COM QUE LETRA? CLIQUE NA LETRA CERTA!</p>
+    </cell>
+   </messages>
+   <settings margin="7" dragCells="true" report="false">
+    <helpWindow>
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
+    <container bgColor="0xCC9900">
+     <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="200.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="5.3" markerStroke="5.0">
+     <font family="Arial" size="26" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="1">
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>G</p>
+    </cell>
+    <cell>
+     <p>P</p>
+    </cell>
+    <cell id="0" image="ovelha.png" />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="at_8" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="16" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <p>ENCONTRE A PALAVRINHA. ARRASTE A PALAVRA ATÉ A FIGURA.</p>
+    </cell>
+   </messages>
+   <settings margin="7" dragCells="true" report="false">
+    <helpWindow showSolution="false">
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
+    <container bgColor="0xCC9900">
+     <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="3" cols="1" cellWidth="122.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="5.8" markerStroke="5.0">
+     <font family="Arial" size="26" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell id="0">
+     <p>OVELHA</p>
+    </cell>
+    <cell>
+     <p>PASTORZINHO</p>
+    </cell>
+    <cell>
+     <p>ONÇA</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="200.0" cellHeight="200.0" border="false" id="secondary">
+    <style transparent="true" borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="28" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" shadow="0xCCFFFF" inactive="0xCCFFFF" alternative="0xCCFFFF" border="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="Ovelha.jpg">
+     <style transparent="true" borderStroke="5.0" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" border="0xCC0000" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="at_9" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+     </style>
+     <p>ENCONTRE A PALAVRINHA </p>
+    </cell>
+   </messages>
+   <settings margin="7" dragCells="true" report="false">
+    <helpWindow showSolution="false">
+     <p>USE A SETAS PARA NAVEGAR ENTRE AS ATIVIDADES!</p>
+    </helpWindow>
+    <container bgColor="0xCC9900">
+     <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="90" cycles="2" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF0000" transparent="true" border="false" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="1" cols="4" cellWidth="122.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="6.6" markerStroke="5.0">
+     <font family="Arial" size="26" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" inactive="0xFFFFFF" alternative="0xFFCCCC" border="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell id="1">
+     <p>E</p>
+    </cell>
+    <cell>
+     <p>I</p>
+    </cell>
+    <cell>
+     <p>A</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="2" cellWidth="200.0" cellHeight="200.0" border="false" id="secondary">
+    <style transparent="true" borderStroke="5.0" markerStroke="5.0">
+     <font family="Arial" size="28" bold="true" />
+     <color foreground="0xCC0000" background="0xFFCCCC" shadow="0xCCFFFF" inactive="0xCCFFFF" alternative="0xCCFFFF" border="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell image="Ovelha.jpg" />
+    <cell>
+     <p>OV__LHA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BUA" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="20191224101701_1200_675_-_porco-resized.jpg" file="20191224101701_1200_675_-_porco-resized.jpg" />
+  <media name="duque-de-caxias-resized.jpg" file="duque-de-caxias-resized.jpg" />
+  <media name="ETgx9yhXsAIq52J-resized.jpg" file="etgx9yhxsaiq52j-resized.jpg" />
+  <media name="GALIMHA.jpg" file="galimha.jpg" />
+  <media name="MACACO.jpg" file="macaco.jpg" />
+  <media name="Onca-resized1.jpg" file="onca-resized1.jpg" />
+  <media name="Ourico-do-mar-resized.jpg" file="ourico-do-mar-resized.jpg" />
+  <media name="Ourico-resized.jpg" file="ourico-resized.jpg" />
+  <media name="Ovelha.jpg" file="ovelha.jpg" />
+  <media name="opastorzinho.mpeg" file="opastorzinho.mpeg" />
+  <media name="OPASTORZINHO.png" file="opastorzinho.png" />
+  <media name="ovelha.png" file="ovelha.png" />
+  <media name="pazt.png" file="pazt.png" />
+ </mediaBag>
+</JClicProject>
+

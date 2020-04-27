@@ -1,0 +1,50 @@
+{
+  "title": "Pastor",
+  "date": "03-04-2020",
+  "areaCodes": [
+    "lleng"
+  ],
+  "areas": {
+    "pt": "lleng"
+  },
+  "levelCodes": [
+    "INF"
+  ],
+  "levels": {
+    "pt": "INF"
+  },
+  "description": {
+    "pt": ""
+  },
+  "meta_langs": [
+    "pt"
+  ],
+  "mainFile": "EMM002.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "files": [
+    "20191224101701_1200_675_-_porco-resized.jpg",
+    "EMM002.jclic",
+    "EMM002.jclic.js",
+    "duque-de-caxias-resized.jpg",
+    "etgx9yhxsaiq52j-resized.jpg",
+    "favicon.ico",
+    "galimha.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "macaco.jpg",
+    "onca-resized1.jpg",
+    "opastorzinho.mpeg",
+    "opastorzinho.png",
+    "ourico-do-mar-resized.jpg",
+    "ourico-resized.jpg",
+    "ovelha.jpg",
+    "ovelha.png",
+    "pazt.png",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json"
+  ]
+}
