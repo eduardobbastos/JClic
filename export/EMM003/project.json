@@ -1,0 +1,61 @@
+{
+  "title": "Pastor",
+  "date": "03-04-2020",
+  "areaCodes": [
+    "lleng"
+  ],
+  "areas": {
+    "pt": "lleng"
+  },
+  "levelCodes": [
+    "INF"
+  ],
+  "levels": {
+    "pt": "INF"
+  },
+  "description": {},
+  "meta_langs": [
+    "pt"
+  ],
+  "mainFile": "EMM002.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "files": [
+    "0003.png",
+    "001.png",
+    "004.png",
+    "007.png",
+    "008.png",
+    "009.png",
+    "010.png",
+    "011.png",
+    "012.png",
+    "013.png",
+    "014.png",
+    "015.png",
+    "016.png",
+    "017.png",
+    "019.png",
+    "20.png",
+    "21.png",
+    "EMM002.jclic",
+    "EMM002.jclic.js",
+    "campanha_da_turma_da_monica_contra_o_coronavirus.mpeg",
+    "corona.png",
+    "doenca002.png",
+    "doencaoo2.png",
+    "duque-de-caxias-resized.jpg",
+    "etgx9yhxsaiq52j-resized.jpg",
+    "favicon.ico",
+    "grave.png",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "protecao.png",
+    "simples.png"
+  ]
+}
