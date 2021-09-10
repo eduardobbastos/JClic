@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="alfa001" version="0.1.3">
+ <settings>
+  <title>alfa001</title>
+  <revision description="created" date="9/9/21" />
+  <descriptors />
+  <meta_langs>pt</meta_langs>
+  <descriptions>
+   <description language="pt" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="Busca Palavras" />
+ </sequence>
+ <activities>
+  <activity class="@associations.ComplexAssociation" name="Busca Palavras" code="" inverse="true">
+   <description />
+   <messages />
+   <settings margin="8" dragCells="true" report="true" reportActions="true">
+    <container bgColor="0xFFFFFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <skin file="@mini.xml" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="105.0" cellHeight="90.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell border="false">
+     <style transparent="true" borderStroke="0.7" markerStroke="2.7" />
+    </cell>
+    <cell>
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial Black" size="17" bold="true" />
+      <color background="0xCCCCFF" />
+     </style>
+     <p>1</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial Black" size="17" bold="true" />
+      <color background="0xCCCCFF" />
+     </style>
+     <p>2</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial Black" size="17" bold="true" />
+      <color background="0xCCCCFF" />
+     </style>
+     <p>3</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial Black" size="17" bold="true" />
+      <color background="0xFF9966" />
+     </style>
+     <p>P</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial Black" size="17" bold="true" />
+      <color background="0xFFFFCC" />
+     </style>
+     <p>PÉ</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial Black" size="17" bold="true" />
+      <color background="0xFFFFCC" />
+     </style>
+     <p>PATO</p>
+    </cell>
+    <cell id="2">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial Black" size="17" bold="true" />
+      <color background="0xFFFFCC" />
+     </style>
+     <p>PETECA</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial Black" size="17" bold="true" />
+      <color background="0xFF9966" />
+     </style>
+     <p>B</p>
+    </cell>
+    <cell id="3">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial Black" size="17" bold="true" />
+      <color background="0x66CCFF" />
+     </style>
+     <p>BICA</p>
+    </cell>
+    <cell id="4">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial Black" size="17" bold="true" />
+      <color background="0x66CCFF" />
+     </style>
+     <p>BALA</p>
+    </cell>
+    <cell id="5">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial Black" size="17" bold="true" />
+      <color background="0x66CCFF" />
+     </style>
+     <p>BONECA</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial Black" size="17" bold="true" />
+      <color background="0xFF9966" />
+     </style>
+     <p>T</p>
+    </cell>
+    <cell id="6">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial Black" size="17" bold="true" />
+      <color background="0xCCFFCC" />
+     </style>
+     <p>TAPETE</p>
+    </cell>
+    <cell id="7">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial Black" size="17" bold="true" />
+      <color background="0xCCFFCC" />
+     </style>
+     <p>TATU</p>
+    </cell>
+    <cell id="8">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial Black" size="17" bold="true" />
+      <color background="0xCCFFCC" />
+     </style>
+     <p>TOMATE</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="181.0" cellHeight="203.0" border="false" id="secondary">
+    <style shadow="true" transparent="true" borderStroke="4.1" markerStroke="2.7">
+     <color border="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="P1.gif" />
+    <cell image="P2.gif" />
+    <cell image="P3.gif" />
+    <cell image="B1.gif" />
+    <cell image="B2.gif" />
+    <cell image="B3.gif" />
+    <cell image="T1.gif" />
+    <cell image="T2.gif" />
+    <cell image="T3.gif" />
+   </cells>
+   <cells rows="4" cols="4" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell image="pe.jpg" />
+    <cell image="Pato.jpg" />
+    <cell image="Peteca.jpg" />
+    <cell />
+    <cell image="bica.jpg" />
+    <cell image="bala.png" />
+    <cell image="boneca-resized1.jpg" />
+    <cell />
+    <cell image="tapete.jpg" />
+    <cell image="Tatu.jpg" />
+    <cell image="Tomate.jpg" />
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="BA" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="B1.gif" file="b1.gif" animated="true" />
+  <media name="B2.gif" file="b2.gif" animated="true" />
+  <media name="B3.gif" file="b3.gif" animated="true" />
+  <media name="P1.gif" file="p1.gif" animated="true" />
+  <media name="P2.gif" file="p2.gif" animated="true" />
+  <media name="P3.gif" file="p3.gif" animated="true" />
+  <media name="T1.gif" file="t1.gif" animated="true" />
+  <media name="T2.gif" file="t2.gif" animated="true" />
+  <media name="T3.gif" file="t3.gif" animated="true" />
+  <media name="bica.jpg" file="bica.jpg" />
+  <media name="boneca-resized1.jpg" file="boneca-resized1.jpg" />
+  <media name="Pato.jpg" file="pato.jpg" />
+  <media name="pe.jpg" file="pe.jpg" />
+  <media name="Peteca.jpg" file="peteca.jpg" />
+  <media name="tapete.jpg" file="tapete.jpg" />
+  <media name="Tatu.jpg" file="tatu.jpg" />
+  <media name="Tomate.jpg" file="tomate.jpg" />
+  <media name="bala.png" file="bala.png" />
+ </mediaBag>
+</JClicProject>
+

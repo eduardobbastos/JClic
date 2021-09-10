@@ -1,0 +1,47 @@
+{
+  "title": "alfa001",
+  "date": "09-09-2021",
+  "description": {},
+  "license": {
+    "pt": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "pt"
+  ],
+  "mainFile": "alfa001.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 1,
+  "mediaFiles": 23,
+  "totalSize": 3152664,
+  "files": [
+    "alfa001.jclic",
+    "alfa001.jclic.js",
+    "b1.gif",
+    "b2.gif",
+    "b3.gif",
+    "bala.png",
+    "bica.jpg",
+    "boneca-resized1.jpg",
+    "favicon.ico",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "p1.gif",
+    "p2.gif",
+    "p3.gif",
+    "pato.jpg",
+    "pe.jpg",
+    "peteca.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "t1.gif",
+    "t2.gif",
+    "t3.gif",
+    "tapete.jpg",
+    "tatu.jpg",
+    "tomate.jpg"
+  ]
+}
