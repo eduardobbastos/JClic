@@ -58,7 +58,7 @@
    </messages>
    <settings margin="8" dragCells="true" report="true" reportActions="true">
     <container bgColor="0xFFFFFF">
-     <image name="image242-resized.jpg" tiled="false" />
+     <image name="image242-resized.jpg" tiled="true" />
      <counters time="false" actions="false" score="true" />
     </container>
     <window bgColor="0x67FFFFFF" transparent="true" border="true" />
