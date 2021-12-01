@@ -210,7 +210,7 @@
       <font family="Arial Black" size="17" bold="true" />
       <color background="0xFFCCCC" />
      </style>
-     <media type="PLAY_AUDIO" level="1" file="teia.mp3" />
+     <media type="PLAY_AUDIO" level="1" file="teia3.mp3" />
      <p>TEIA</p>
     </cell>
     <cell id="10">
@@ -328,7 +328,7 @@
       <font family="Arial Black" size="17" bold="true" />
       <color background="0xFFCCCC" />
      </style>
-     <media type="PLAY_AUDIO" level="1" file="Vitamina.mp3" />
+     <media type="PLAY_AUDIO" level="1" file="vitamina2.mp3" />
      <p>VITAMINA</p>
     </cell>
     <cell id="23">
@@ -383,7 +383,7 @@
       <font family="Arial Black" size="17" bold="true" />
       <color background="0xFFCCCC" />
      </style>
-     <media type="PLAY_AUDIO" level="1" file="veado.mp3" />
+     <media type="PLAY_AUDIO" level="1" file="Veado2.mp3" />
      <p>VEADO</p>
     </cell>
     <cell id="29">
@@ -406,7 +406,7 @@
       <font family="Arial Black" size="17" bold="true" />
       <color background="0xFFCCCC" />
      </style>
-     <media type="PLAY_AUDIO" level="1" file="bota.mp3" />
+     <media type="PLAY_AUDIO" level="1" file="bota3.mp3" />
      <p>BOTA</p>
     </cell>
     <cell id="31">
@@ -814,7 +814,9 @@
      <media type="PLAY_AUDIO" level="1" file="fio.mp3" />
     </cell>
     <cell />
-    <cell image="bota-resized.jpg" />
+    <cell image="bota-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="bota_ok.mp3" />
+    </cell>
     <cell image="pipa-resized.jpg">
      <media type="PLAY_AUDIO" level="1" file="pipa.mp3" />
     </cell>
@@ -879,7 +881,8 @@
   <media name="bico.mp3" file="bico.mp3" />
   <media name="boca.mp3" file="boca.mp3" />
   <media name="bola.mp3" file="bola.mp3" />
-  <media name="bota.mp3" file="bota.mp3" />
+  <media name="bota3.mp3" file="bota3.mp3" />
+  <media name="bota_ok.mp3" file="bota_ok.mp3" />
   <media name="bule.mp3" file="bule.mp3" />
   <media name="dado.mp3" file="dado.mp3" />
   <media name="dama.mp3" file="dama.mp3" />
@@ -903,16 +906,18 @@
   <media name="pipa.mp3" file="pipa.mp3" />
   <media name="tabua.mp3" file="taboa.mp3" />
   <media name="tatu.mp3" file="tatu.mp3" />
-  <media name="teia.mp3" file="teia.mp3" />
+  <media name="teia3.mp3" file="teia3.mp3" />
   <media name="Tela.mp3" file="tela.mp3" />
   <media name="Tomada.mp3" file="tomada.mp3" />
   <media name="touca.mp3" file="touca.mp3" />
   <media name="vaca.mp3" file="vaca.mp3" />
   <media name="veado.mp3" file="veado.mp3" />
+  <media name="Veado2.mp3" file="veado2.mp3" />
   <media name="Vela.mp3" file="vela.mp3" />
   <media name="vila.mp3" file="vila.mp3" />
   <media name="viola.mp3" file="viola.mp3" />
   <media name="Vitamina.mp3" file="vitamina.mp3" />
+  <media name="vitamina2.mp3" file="vitamina2.mp3" />
   <media name="viva.mp3" file="viva.mp3" />
   <media name="191-speaker-outline.png" file="191-speaker-outline.png" />
   <media name="bico.png" file="bico.png" />

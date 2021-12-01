@@ -20,8 +20,8 @@
   "thumbnail": "project-thumb.jpg",
   "mainFile": "buscapalavras.jclic",
   "activities": 2,
-  "mediaFiles": 93,
-  "totalSize": 5730801,
+  "mediaFiles": 96,
+  "totalSize": 6018597,
   "files": [
     "191-speaker-outline.png",
     "alfa002/191-speaker-outline.png",
@@ -46,7 +46,8 @@
     "bola.jpg",
     "bola.mp3",
     "bota-resized.jpg",
-    "bota.mp3",
+    "bota3.mp3",
+    "bota_ok.mp3",
     "bule.jpg",
     "bule.mp3",
     "buscapalavras.jclic",
@@ -103,7 +104,7 @@
     "tatu.mp3",
     "tatu_571012585-resized.jpg",
     "teia-resized.jpg",
-    "teia.mp3",
+    "teia3.mp3",
     "tela.jpg",
     "tela.mp3",
     "tomada-resized.jpg",
@@ -114,6 +115,7 @@
     "vaca.mp3",
     "veado.jpg",
     "veado.mp3",
+    "veado2.mp3",
     "vela.jpg",
     "vela.mp3",
     "vila.jpg",
@@ -122,6 +124,7 @@
     "viola.mp3",
     "vitamina.jpg",
     "vitamina.mp3",
+    "vitamina2.mp3",
     "viva.mp3"
   ]
 }
