@@ -748,7 +748,7 @@
      <media type="PLAY_AUDIO" level="1" file="dia.mp3" />
     </cell>
     <cell image="teia-resized.jpg">
-     <media type="PLAY_AUDIO" level="1" file="Tela.mp3" />
+     <media type="PLAY_AUDIO" level="1" file="teia3.mp3" />
     </cell>
     <cell image="viola.jpg">
      <media type="PLAY_AUDIO" level="1" file="viola.mp3" />
