@@ -1,46 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-<meta charset="UTF-8">
-<title>Chat com Llama API</title>
-<script src="https://cdn.jsdelivr.net/npm/llamaai"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const apiToken = "LL-a40dtgYmPidaIPvsKrWbdJrgk7NyEpmlZs61cgqyssxcfuyIC2zvgCjuuVYhXaG5";
-    const llamaAPI = new LlamaAI(apiToken);
-
-    async function fetchChatResponse() {
-        const userInput = document.getElementById('userInput').value;
-        const responseContainer = document.getElementById('response');
-
-        const apiRequestJson = {
-            model: "llama-7b-chat",
-            messages: [{ role: "user", content: userInput }],
-            stream: false
-        };
-
-        try {
-            const response = await llamaAPI.run(apiRequestJson);
-            const choice = response.choices[0];
-            if (choice.finish_reason === "function_call") {
-                responseContainer.textContent = `Chamando função: ${choice.message.function_call.name} com os argumentos ${JSON.stringify(choice.message.function_call.arguments)}`;
-            } else {
-                responseContainer.textContent = choice.message.content;
-            }
-        } catch (error) {
-            console.error('Erro ao buscar a resposta da API:', error);
-            responseContainer.textContent = 'Erro ao buscar resposta.';
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat de IA sobre Clima</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
         }
-    }
-
-    document.getElementById('sendButton').addEventListener('click', fetchChatResponse);
-});
-</script>
+        .chat-container {
+            width: 300px;
+            height: 400px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .messages {
+            flex-grow: 1;
+            padding: 10px;
+            overflow-y: auto;
+        }
+        .message {
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .user {
+            align-self: flex-start;
+            background-color: #dcf8c6;
+        }
+        .ai {
+            align-self: flex-end;
+            background-color: #ebebeb;
+        }
+        .input-area {
+            padding: 10px;
+            display: flex;
+        }
+        input[type="text"] {
+            flex-grow: 1;
+            padding: 10px;
+            margin-right: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-<h1>Chat com Llama API</h1>
-<input type="text" id="userInput" placeholder="Digite sua mensagem...">
-<button id="sendButton">Enviar</button>
-<p id="response"></p>
+    <div class="chat-container">
+        <div class="messages"></div>
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Pergunte sobre o clima...">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+    <script src="path/to/llamaai.js"></script>
+    <script>
+        const apiToken = 'LL-a40dtgYmPidaIPvsKrWbdJrgk7NyEpmlZs61cgqyssxcfuyIC2zvgCjuuVYhXaG5';
+        const llamaAPI = new LlamaAI(apiToken);
+
+        function sendMessage() {
+            const input = document.getElementById('userInput');
+            const messageContent = input.value;
+            input.value = ''; // Limpar input após o envio
+
+            displayMessage(messageContent, 'user');
+
+            const apiRequestJson = {
+                "messages": [
+                    {"role": "user", "content": messageContent},
+                ],
+                "functions": [
+                    {
+                        "name": "get_current_weather",
+                        "description": "Get the current weather in a given location",
+                        "parameters": {
+                            "type": "object",
+                            "properties": {
+                                "location": {"type": "string", "description": "The city and state"},
+                                "unit": {"type": "string", "enum": ["celsius", "fahrenheit"]}
+                            },
+                            "required": ["location"]
+                        }
+                    }
+                ],
+                "stream": false,
+                "function_call": "get_current_weather"
+            };
+
+            llamaAPI.run(apiRequestJson)
+                .then(response => {
+                    displayMessage(response, 'ai');
+                })
+                .catch(error => {
+                    displayMessage('Desculpe, ocorreu um erro.', 'ai');
+                });
+        }
+
+        function displayMessage(message, sender) {
+            const messagesContainer = document.querySelector('.messages');
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('message', sender);
+            messageDiv.textContent = message;
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight; // Auto scroll para o último mensagem
+        }
+    </script>
 </body>
 </html>
