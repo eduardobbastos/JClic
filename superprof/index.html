@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -7,7 +8,7 @@
 async function fetchChatResponse() {
     const userInput = document.getElementById('userInput').value;
     const responseContainer = document.getElementById('response');
-    const apiKey = 'LL-a40dtgYmPidaIPvsKrWbdJrgk7NyEpmlZs61cgqyssxcfuyIC2zvgCjuuVYhXaG5'; // Substitua com sua chave real da API
+    const apiKey = 'a40dtgYmPidaIPvsKrWbdJrgk7NyEpmlZs61cgqyssxcfuyIC2zvgCjuuVYhXaG5'; // Substitua com sua chave real da API
 
     try {
         const response = await fetch('https://api.llama.com/v1/chat', {
@@ -16,11 +17,14 @@ async function fetchChatResponse() {
                 'Content-Type': 'application/json',
                 'Authorization': 'Bearer ' + apiKey
             },
-            body: JSON.stringify({ input: userInput })
+            body: JSON.stringify({
+                model: "modelo-especifico", // Substitua pelo modelo desejado
+                messages: [{ text: userInput }]
+            })
         });
 
         const data = await response.json();
-        responseContainer.textContent = data.output; // Ajuste de acordo com a estrutura da resposta
+        responseContainer.textContent = data.responses[0].message.text; // Ajuste conforme a estrutura da resposta
     } catch (error) {
         console.error('Erro ao buscar a resposta da API:', error);
         responseContainer.textContent = 'Erro ao buscar resposta.';
