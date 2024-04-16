@@ -21,7 +21,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
         try {
             const response = await llamaAPI.run(apiRequestJson);
-            responseContainer.textContent = response.data.responses[0].message.text; // Ajuste conforme a estrutura da resposta
+            const choice = response.choices[0];
+            if (choice.finish_reason === "function_call") {
+                responseContainer.textContent = `Chamando função: ${choice.message.function_call.name} com os argumentos ${JSON.stringify(choice.message.function_call.arguments)}`;
+            } else {
+                responseContainer.textContent = choice.message.content;
+            }
         } catch (error) {
             console.error('Erro ao buscar a resposta da API:', error);
             responseContainer.textContent = 'Erro ao buscar resposta.';
