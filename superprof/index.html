@@ -18,7 +18,7 @@ async function fetchChatResponse() {
                 'Authorization': 'Bearer ' + apiKey
             },
             body: JSON.stringify({
-                model: "modelo-especifico", // Substitua pelo modelo desejado
+                model: "llama-7b-chat", // Substitua pelo modelo desejado
                 messages: [{ text: userInput }]
             })
         });
