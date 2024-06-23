@@ -1,0 +1,58 @@
+{
+  "title": "MAT2A",
+  "author": "Eduardo Bastos (Professor de Matemática)",
+  "date": "23-06-2024",
+  "langCodes": [
+    "pt"
+  ],
+  "languages": {
+    "pt": "português"
+  },
+  "areaCodes": [
+    "mat"
+  ],
+  "areas": {
+    "pt": "mat"
+  },
+  "levelCodes": [
+    "INF",
+    "PRI"
+  ],
+  "levels": {
+    "pt": "INF, PRI"
+  },
+  "description": {
+    "pt": "ETIQUETA PARA REFÊNCIA DESTE TRABALHO: MAT2A\r\nUNIDADES TEMÁTICAS: Números\r\nOBJETOS DE CONHECIMENTO: Construção de fatos fundamentais da adição e da subtração\r\nHABILIDADES: (EF02MA05) Construir fatos básicos da adição e subtração e utilizá-los no cálculo mental ou escrito.\r"
+  },
+  "license": {
+    "pt": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "pt"
+  ],
+  "mainFile": "mat2a.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 9,
+  "mediaFiles": 12,
+  "totalSize": 1611624,
+  "files": [
+    "captura_de_tela_2024-06-23_073646.png",
+    "captura_de_tela_2024-06-23_090622.png",
+    "captura_de_tela_2024-06-23_092629.png",
+    "captura_de_tela_2024-06-23_093454.png",
+    "favicon.ico",
+    "icon-192.png",
+    "icon-72.png",
+    "img_006.png",
+    "img_007.png",
+    "img_008.png",
+    "imsmanifest.xml",
+    "index.html",
+    "mat2a.jclic",
+    "mat2a.jclic.js",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json"
+  ]
+}
