@@ -29,13 +29,13 @@
   <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
  </settings>
  <sequence>
-  <item id="start" name="Desafio do Quebra-cabeça" />
+  <item id="start" name="Desafio_do_Quebra_cabeça" />
   <item name="Observe com Atenção" />
   <item name="Probleminha" />
   <item name="Probleminha_Meninas_A" />
   <item name="Probleminha_Meninos_B" />
   <item name="Probleminha_Crianças" />
-  <item name="Desafio do Quebra-cabeça Continha" />
+  <item name="Desafio_do_Quebra-cabeça_Continha" />
   <item name="Probleminha_Continha_1" />
   <item name="Probleminha_Continha_2" />
   <item name="Probleminha_Meninos_C" />
@@ -49,9 +49,674 @@
   <item name="Cubos_Barras_H" />
   <item name="Probleminha_Meninos_D" />
   <item name="Probleminha_Meninos_E" />
+  <item name="Desafio_dos_gatos" />
+  <item name="Desafio_dos_gatos_2" />
+  <item name="Desafio_dos_gatos_5" />
+  <item name="Desafio_dos_gatos_3" />
  </sequence>
  <activities>
-  <activity class="@puzzles.DoublePuzzle" name="Desafio do Quebra-cabeça" code="">
+  <activity class="@panels.Identify" name="Cubos_Barras" code="">
+   <description />
+   <messages>
+    <cell border="false" type="initial">
+     <style transparent="true">
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>QUAL É A RESPOSTA CERTA? É SÓ CLICAR!</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <color foreground="0x000066" />
+     </style>
+     <p>VOCÊ ESTA AVANÇANDO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <gradient source="0xCCCCFF" dest="0xCCFFFF" angle="35" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="false" />
+   </settings>
+   <cells rows="2" cols="5" cellWidth="230.0" cellHeight="280.0" border="true" id="primary">
+    <style transparent="true" borderStroke="2.7" markerStroke="2.7">
+     <color foreground="0x000066" border="0x000066" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell id="0" image="img0015-resized.jpg" />
+    <cell id="0">
+     <p>VAMOS USAR ESTE MATERIAL PRA AJUDAR.</p>
+     <p>CUBINHOE E BARRAS!</p>
+    </cell>
+    <cell id="0" txtAlign="middle,top" border="true" image="md_14.png">
+     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
+      <font family="Arial" size="18" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>QUNATIDADE DE BALAS DO BETO</p>
+    </cell>
+    <cell id="0" txtAlign="middle,top" border="true" image="md_12.png">
+     <style transparent="true" borderStroke="3.6" markerStroke="5.0">
+      <font family="Arial" size="18" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>QUANTIDADE DE BALAS DE MARCOS</p>
+    </cell>
+    <cell id="0" txtAlign="middle,top" avoidOverlapping="true" border="true" image="md_26.png">
+     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
+      <font family="Arial" size="18" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>TOTAL</p>
+    </cell>
+    <cell id="0" border="false" />
+    <cell id="0" border="false" />
+    <cell id="1">
+     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
+      <font family="Arial" size="26" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>26</p>
+    </cell>
+    <cell id="0">
+     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
+      <font family="Arial" size="26" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>30</p>
+    </cell>
+    <cell id="0">
+     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
+      <font family="Arial" size="26" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>46</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell image="img003.png" />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="Cubos_Barras_A" code="">
+   <description />
+   <messages>
+    <cell border="false" type="initial">
+     <style transparent="true">
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>É PARA SOMAR!</p>
+     <p>QUAL É A RESPOSTA CERTA? É SÓ CLICAR!</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <color foreground="0x000066" />
+     </style>
+     <p>VOCÊ ESTA AVANÇANDO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <gradient source="0xCCCCFF" dest="0xCCFFFF" angle="35" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="false" />
+   </settings>
+   <cells rows="2" cols="4" cellWidth="230.0" cellHeight="280.0" border="true" id="primary">
+    <style transparent="true" borderStroke="2.7" markerStroke="2.7">
+     <color foreground="0x000066" border="0x000066" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell id="0" border="false" />
+    <cell id="0" border="true" image="10.png" />
+    <cell id="0" txtAlign="middle,top" border="true" image="2.png">
+     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
+      <font family="Arial" size="18" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+    </cell>
+    <cell id="0" txtAlign="middle,top" border="false" />
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>10</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>11</p>
+    </cell>
+    <cell id="1" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>12</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>13</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell image="img_009.png" />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="Cubos_Barras_B" code="">
+   <description />
+   <messages>
+    <cell border="false" type="initial">
+     <style transparent="true">
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>É PARA SOMAR!</p>
+     <p>QUAL É A RESPOSTA CERTA? É SÓ CLICAR!</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <color foreground="0x000066" />
+     </style>
+     <p>VOCÊ ESTA AVANÇANDO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <gradient source="0xCCCCFF" dest="0xCCFFFF" angle="35" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="false" />
+   </settings>
+   <cells rows="2" cols="4" cellWidth="230.0" cellHeight="280.0" border="true" id="primary">
+    <style transparent="true" borderStroke="2.7" markerStroke="2.7">
+     <color foreground="0x000066" border="0x000066" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell id="0" border="false" />
+    <cell id="0" border="true" image="15_.png" />
+    <cell id="0" txtAlign="middle,top" border="true" image="15.png">
+     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
+      <font family="Arial" size="18" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+    </cell>
+    <cell id="0" txtAlign="middle,top" border="false" />
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>12</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>32</p>
+    </cell>
+    <cell id="1" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>30</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>15</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell image="img_009.png" />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="Cubos_Barras_C" code="">
+   <description />
+   <messages>
+    <cell border="false" type="initial">
+     <style transparent="true">
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>É PARA SOMAR!</p>
+     <p>QUAL É A RESPOSTA CERTA? É SÓ CLICAR!</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <color foreground="0x000066" />
+     </style>
+     <p>VOCÊ ESTA AVANÇANDO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <gradient source="0xCCCCFF" dest="0xCCFFFF" angle="35" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="false" />
+   </settings>
+   <cells rows="2" cols="4" cellWidth="230.0" cellHeight="280.0" border="true" id="primary">
+    <style transparent="true" borderStroke="2.7" markerStroke="2.7">
+     <color foreground="0x000066" border="0x000066" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell id="0" border="false" />
+    <cell id="0" border="true" image="10.png" />
+    <cell id="0" txtAlign="middle,top" border="true" image="3.png">
+     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
+      <font family="Arial" size="18" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+    </cell>
+    <cell id="0" txtAlign="middle,top" border="false" />
+    <cell id="1" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>10+3=13</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>10+5=15</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>12+2=14</p>
+    </cell>
+    <cell id="1" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>3+10=13</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell image="img003.png" />
+    <cell />
+    <cell />
+    <cell image="img_009.png" />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="Cubos_Barras_E" code="">
+   <description />
+   <messages>
+    <cell border="false" type="initial">
+     <style transparent="true">
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>É PARA SOMAR!</p>
+     <p>QUAL É A RESPOSTA CERTA? É SÓ CLICAR!</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <color foreground="0x000066" />
+     </style>
+     <p>VOCÊ ESTA AVANÇANDO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <gradient source="0xCCCCFF" dest="0xCCFFFF" angle="35" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="false" />
+   </settings>
+   <cells rows="2" cols="4" cellWidth="230.0" cellHeight="280.0" border="true" id="primary">
+    <style transparent="true" borderStroke="2.7" markerStroke="2.7">
+     <color foreground="0x000066" border="0x000066" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell id="0" border="false" />
+    <cell id="0" border="true" image="10.png" />
+    <cell id="0" txtAlign="middle,top" border="true" image="15_.png">
+     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
+      <font family="Arial" size="18" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+    </cell>
+    <cell id="0" txtAlign="middle,top" border="false" />
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>10</p>
+    </cell>
+    <cell id="1" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>25</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>15</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>20</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell image="img003.png" />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="Cubos_Barras_F" code="">
+   <description />
+   <messages>
+    <cell border="false" type="initial">
+     <style transparent="true">
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>É PARA SOMAR!</p>
+     <p>QUAL É A RESPOSTA CERTA? É SÓ CLICAR!</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <color foreground="0x000066" />
+     </style>
+     <p>VOCÊ ESTA AVANÇANDO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <gradient source="0xCCCCFF" dest="0xCCFFFF" angle="35" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="false" />
+   </settings>
+   <cells rows="2" cols="4" cellWidth="230.0" cellHeight="280.0" border="true" id="primary">
+    <style transparent="true" borderStroke="2.7" markerStroke="2.7">
+     <color foreground="0x000066" border="0x000066" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell id="0" border="false" />
+    <cell id="0" border="true" image="24.png" />
+    <cell id="0" txtAlign="middle,top" border="true" image="15_.png">
+     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
+      <font family="Arial" size="18" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+    </cell>
+    <cell id="0" txtAlign="middle,top" border="false" />
+    <cell id="1" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>24+15=39</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>24+12=39</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>25+14=39</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>20+20=40</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell image="img_009.png" />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="Cubos_Barras_G" code="">
+   <description />
+   <messages>
+    <cell border="false" type="initial">
+     <style transparent="true">
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>É PARA SOMAR!</p>
+     <p>QUAL É A RESPOSTA CERTA? É SÓ CLICAR!</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <color foreground="0x000066" />
+     </style>
+     <p>VOCÊ ESTA AVANÇANDO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <gradient source="0xCCCCFF" dest="0xCCFFFF" angle="35" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="false" />
+   </settings>
+   <cells rows="2" cols="4" cellWidth="230.0" cellHeight="280.0" border="true" id="primary">
+    <style transparent="true" borderStroke="2.7" markerStroke="2.7">
+     <color foreground="0x000066" border="0x000066" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell id="0" border="false" />
+    <cell id="0" border="true" image="32.png" />
+    <cell id="0" txtAlign="middle,top" border="true" image="3.png">
+     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
+      <font family="Arial" size="18" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+    </cell>
+    <cell id="0" txtAlign="middle,top" border="false" />
+    <cell id="1" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>35</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>34</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>45</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>53</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell image="img_009.png" />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="Cubos_Barras_H" code="">
+   <description />
+   <messages>
+    <cell border="false" type="initial">
+     <style transparent="true">
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>É PARA SOMAR!</p>
+     <p>QUAL É A RESPOSTA CERTA? É SÓ CLICAR!</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <color foreground="0x000066" />
+     </style>
+     <p>VOCÊ ESTA AVANÇANDO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <gradient source="0xCCCCFF" dest="0xCCFFFF" angle="35" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="false" />
+   </settings>
+   <cells rows="2" cols="4" cellWidth="230.0" cellHeight="280.0" border="true" id="primary">
+    <style transparent="true" borderStroke="2.7" markerStroke="2.7">
+     <color foreground="0x000066" border="0x000066" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell id="0" border="false" />
+    <cell id="0" border="true" image="md_22.png" />
+    <cell id="0" txtAlign="middle,top" border="true" image="md_22.png">
+     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
+      <font family="Arial" size="18" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+    </cell>
+    <cell id="0" txtAlign="middle,top" border="false" />
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>44</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>23</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>45</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>55</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell image="img003.png" />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="Desafio_do_Quebra_cabeça" code="">
    <description />
    <messages>
     <cell type="initial">
@@ -85,7 +750,7 @@
    <scramble times="31" />
    <layout position="AB" />
   </activity>
-  <activity class="@puzzles.DoublePuzzle" name="Desafio do Quebra-cabeça Continha" code="">
+  <activity class="@puzzles.DoublePuzzle" name="Desafio_do_Quebra-cabeça_Continha" code="">
    <description />
    <messages>
     <cell type="initial">
@@ -737,667 +1402,6 @@
    </cells>
    <scramble times="31" primary="false" />
   </activity>
-  <activity class="@panels.Identify" name="Cubos_Barras_A" code="">
-   <description />
-   <messages>
-    <cell border="false" type="initial">
-     <style transparent="true">
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>É PARA SOMAR!</p>
-     <p>QUAL É A RESPOSTA CERTA? É SÓ CLICAR!</p>
-    </cell>
-    <cell type="final">
-     <style transparent="true">
-      <color foreground="0x000066" />
-     </style>
-     <p>VOCÊ ESTA AVANÇANDO!</p>
-    </cell>
-   </messages>
-   <settings margin="8" report="true" reportActions="false">
-    <container bgColor="0xFFFFFF">
-     <gradient source="0xCCCCFF" dest="0xCCFFFF" angle="35" />
-     <counters time="true" actions="true" score="true" />
-    </container>
-    <window bgColor="0xFFFFFF" border="false" />
-   </settings>
-   <cells rows="2" cols="4" cellWidth="230.0" cellHeight="280.0" border="true" id="primary">
-    <style transparent="true" borderStroke="2.7" markerStroke="2.7">
-     <color foreground="0x000066" border="0x000066" />
-    </style>
-    <shaper class="@Rectangular" cols="4" rows="2" />
-    <cell id="0" border="false" />
-    <cell id="0" border="true" image="10.png" />
-    <cell id="0" txtAlign="middle,top" border="true" image="2.png">
-     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
-      <font family="Arial" size="18" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-    </cell>
-    <cell id="0" txtAlign="middle,top" border="false" />
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>10</p>
-    </cell>
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>11</p>
-    </cell>
-    <cell id="1" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>12</p>
-    </cell>
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>13</p>
-    </cell>
-   </cells>
-   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
-    <style />
-    <shaper class="@Rectangular" cols="4" rows="2" />
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-    <cell image="img_009.png" />
-    <cell />
-   </cells>
-   <scramble times="31" primary="false" />
-  </activity>
-  <activity class="@panels.Identify" name="Cubos_Barras" code="">
-   <description />
-   <messages>
-    <cell border="false" type="initial">
-     <style transparent="true">
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>QUAL É A RESPOSTA CERTA? É SÓ CLICAR!</p>
-    </cell>
-    <cell type="final">
-     <style transparent="true">
-      <color foreground="0x000066" />
-     </style>
-     <p>VOCÊ ESTA AVANÇANDO!</p>
-    </cell>
-   </messages>
-   <settings margin="8" report="true" reportActions="false">
-    <container bgColor="0xFFFFFF">
-     <gradient source="0xCCCCFF" dest="0xCCFFFF" angle="35" />
-     <counters time="true" actions="true" score="true" />
-    </container>
-    <window bgColor="0xFFFFFF" border="false" />
-   </settings>
-   <cells rows="2" cols="5" cellWidth="230.0" cellHeight="280.0" border="true" id="primary">
-    <style transparent="true" borderStroke="2.7" markerStroke="2.7">
-     <color foreground="0x000066" border="0x000066" />
-    </style>
-    <shaper class="@Rectangular" cols="5" rows="2" />
-    <cell id="0" image="img0015-resized.jpg" />
-    <cell id="0">
-     <p>VAMOS USAR ESTE MATERIAL PRA AJUDAR.</p>
-     <p>CUBINHOE E BARRAS!</p>
-    </cell>
-    <cell id="0" txtAlign="middle,top" border="true" image="md_14.png">
-     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
-      <font family="Arial" size="18" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>QUNATIDADE DE BALAS DO BETO</p>
-    </cell>
-    <cell id="0" txtAlign="middle,top" border="true" image="md_12.png">
-     <style transparent="true" borderStroke="3.6" markerStroke="5.0">
-      <font family="Arial" size="18" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>QUANTIDADE DE BALAS DE MARCOS</p>
-    </cell>
-    <cell id="0" txtAlign="middle,top" avoidOverlapping="true" border="true" image="md_26.png">
-     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
-      <font family="Arial" size="18" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>TOTAL</p>
-    </cell>
-    <cell id="0" border="false" />
-    <cell id="0" border="false" />
-    <cell id="1">
-     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
-      <font family="Arial" size="26" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>26</p>
-    </cell>
-    <cell id="0">
-     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
-      <font family="Arial" size="26" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>30</p>
-    </cell>
-    <cell id="0">
-     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
-      <font family="Arial" size="26" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>46</p>
-    </cell>
-   </cells>
-   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
-    <style />
-    <shaper class="@Rectangular" cols="5" rows="2" />
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-    <cell image="img003.png" />
-    <cell />
-    <cell />
-   </cells>
-   <scramble times="31" primary="false" />
-  </activity>
-  <activity class="@panels.Identify" name="Cubos_Barras_C" code="">
-   <description />
-   <messages>
-    <cell border="false" type="initial">
-     <style transparent="true">
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>É PARA SOMAR!</p>
-     <p>QUAL É A RESPOSTA CERTA? É SÓ CLICAR!</p>
-    </cell>
-    <cell type="final">
-     <style transparent="true">
-      <color foreground="0x000066" />
-     </style>
-     <p>VOCÊ ESTA AVANÇANDO!</p>
-    </cell>
-   </messages>
-   <settings margin="8" report="true" reportActions="false">
-    <container bgColor="0xFFFFFF">
-     <gradient source="0xCCCCFF" dest="0xCCFFFF" angle="35" />
-     <counters time="true" actions="true" score="true" />
-    </container>
-    <window bgColor="0xFFFFFF" border="false" />
-   </settings>
-   <cells rows="2" cols="4" cellWidth="230.0" cellHeight="280.0" border="true" id="primary">
-    <style transparent="true" borderStroke="2.7" markerStroke="2.7">
-     <color foreground="0x000066" border="0x000066" />
-    </style>
-    <shaper class="@Rectangular" cols="4" rows="2" />
-    <cell id="0" border="false" />
-    <cell id="0" border="true" image="10.png" />
-    <cell id="0" txtAlign="middle,top" border="true" image="3.png">
-     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
-      <font family="Arial" size="18" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-    </cell>
-    <cell id="0" txtAlign="middle,top" border="false" />
-    <cell id="1" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>10+3=13</p>
-    </cell>
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>10+5=15</p>
-    </cell>
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>12+2=14</p>
-    </cell>
-    <cell id="1" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>3+10=13</p>
-    </cell>
-   </cells>
-   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
-    <style />
-    <shaper class="@Rectangular" cols="4" rows="2" />
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-    <cell image="img003.png" />
-    <cell />
-    <cell />
-    <cell image="img_009.png" />
-   </cells>
-   <scramble times="31" primary="false" />
-  </activity>
-  <activity class="@panels.Identify" name="Cubos_Barras_E" code="">
-   <description />
-   <messages>
-    <cell border="false" type="initial">
-     <style transparent="true">
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>É PARA SOMAR!</p>
-     <p>QUAL É A RESPOSTA CERTA? É SÓ CLICAR!</p>
-    </cell>
-    <cell type="final">
-     <style transparent="true">
-      <color foreground="0x000066" />
-     </style>
-     <p>VOCÊ ESTA AVANÇANDO!</p>
-    </cell>
-   </messages>
-   <settings margin="8" report="true" reportActions="false">
-    <container bgColor="0xFFFFFF">
-     <gradient source="0xCCCCFF" dest="0xCCFFFF" angle="35" />
-     <counters time="true" actions="true" score="true" />
-    </container>
-    <window bgColor="0xFFFFFF" border="false" />
-   </settings>
-   <cells rows="2" cols="4" cellWidth="230.0" cellHeight="280.0" border="true" id="primary">
-    <style transparent="true" borderStroke="2.7" markerStroke="2.7">
-     <color foreground="0x000066" border="0x000066" />
-    </style>
-    <shaper class="@Rectangular" cols="4" rows="2" />
-    <cell id="0" border="false" />
-    <cell id="0" border="true" image="10.png" />
-    <cell id="0" txtAlign="middle,top" border="true" image="15_.png">
-     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
-      <font family="Arial" size="18" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-    </cell>
-    <cell id="0" txtAlign="middle,top" border="false" />
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>10</p>
-    </cell>
-    <cell id="1" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>25</p>
-    </cell>
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>15</p>
-    </cell>
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>20</p>
-    </cell>
-   </cells>
-   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
-    <style />
-    <shaper class="@Rectangular" cols="4" rows="2" />
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-    <cell image="img003.png" />
-    <cell />
-    <cell />
-   </cells>
-   <scramble times="31" primary="false" />
-  </activity>
-  <activity class="@panels.Identify" name="Cubos_Barras_F" code="">
-   <description />
-   <messages>
-    <cell border="false" type="initial">
-     <style transparent="true">
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>É PARA SOMAR!</p>
-     <p>QUAL É A RESPOSTA CERTA? É SÓ CLICAR!</p>
-    </cell>
-    <cell type="final">
-     <style transparent="true">
-      <color foreground="0x000066" />
-     </style>
-     <p>VOCÊ ESTA AVANÇANDO!</p>
-    </cell>
-   </messages>
-   <settings margin="8" report="true" reportActions="false">
-    <container bgColor="0xFFFFFF">
-     <gradient source="0xCCCCFF" dest="0xCCFFFF" angle="35" />
-     <counters time="true" actions="true" score="true" />
-    </container>
-    <window bgColor="0xFFFFFF" border="false" />
-   </settings>
-   <cells rows="2" cols="4" cellWidth="230.0" cellHeight="280.0" border="true" id="primary">
-    <style transparent="true" borderStroke="2.7" markerStroke="2.7">
-     <color foreground="0x000066" border="0x000066" />
-    </style>
-    <shaper class="@Rectangular" cols="4" rows="2" />
-    <cell id="0" border="false" />
-    <cell id="0" border="true" image="24.png" />
-    <cell id="0" txtAlign="middle,top" border="true" image="15_.png">
-     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
-      <font family="Arial" size="18" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-    </cell>
-    <cell id="0" txtAlign="middle,top" border="false" />
-    <cell id="1" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>24+15=39</p>
-    </cell>
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>24+12=39</p>
-    </cell>
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>25+14=39</p>
-    </cell>
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>20+20=40</p>
-    </cell>
-   </cells>
-   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
-    <style />
-    <shaper class="@Rectangular" cols="4" rows="2" />
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-    <cell image="img_009.png" />
-    <cell />
-    <cell />
-    <cell />
-   </cells>
-   <scramble times="31" primary="false" />
-  </activity>
-  <activity class="@panels.Identify" name="Cubos_Barras_G" code="">
-   <description />
-   <messages>
-    <cell border="false" type="initial">
-     <style transparent="true">
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>É PARA SOMAR!</p>
-     <p>QUAL É A RESPOSTA CERTA? É SÓ CLICAR!</p>
-    </cell>
-    <cell type="final">
-     <style transparent="true">
-      <color foreground="0x000066" />
-     </style>
-     <p>VOCÊ ESTA AVANÇANDO!</p>
-    </cell>
-   </messages>
-   <settings margin="8" report="true" reportActions="false">
-    <container bgColor="0xFFFFFF">
-     <gradient source="0xCCCCFF" dest="0xCCFFFF" angle="35" />
-     <counters time="true" actions="true" score="true" />
-    </container>
-    <window bgColor="0xFFFFFF" border="false" />
-   </settings>
-   <cells rows="2" cols="4" cellWidth="230.0" cellHeight="280.0" border="true" id="primary">
-    <style transparent="true" borderStroke="2.7" markerStroke="2.7">
-     <color foreground="0x000066" border="0x000066" />
-    </style>
-    <shaper class="@Rectangular" cols="4" rows="2" />
-    <cell id="0" border="false" />
-    <cell id="0" border="true" image="32.png" />
-    <cell id="0" txtAlign="middle,top" border="true" image="3.png">
-     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
-      <font family="Arial" size="18" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-    </cell>
-    <cell id="0" txtAlign="middle,top" border="false" />
-    <cell id="1" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>35</p>
-    </cell>
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>34</p>
-    </cell>
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>45</p>
-    </cell>
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>53</p>
-    </cell>
-   </cells>
-   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
-    <style />
-    <shaper class="@Rectangular" cols="4" rows="2" />
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-    <cell image="img_009.png" />
-    <cell />
-    <cell />
-    <cell />
-   </cells>
-   <scramble times="31" primary="false" />
-  </activity>
-  <activity class="@panels.Identify" name="Cubos_Barras_H" code="">
-   <description />
-   <messages>
-    <cell border="false" type="initial">
-     <style transparent="true">
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>É PARA SOMAR!</p>
-     <p>QUAL É A RESPOSTA CERTA? É SÓ CLICAR!</p>
-    </cell>
-    <cell type="final">
-     <style transparent="true">
-      <color foreground="0x000066" />
-     </style>
-     <p>VOCÊ ESTA AVANÇANDO!</p>
-    </cell>
-   </messages>
-   <settings margin="8" report="true" reportActions="false">
-    <container bgColor="0xFFFFFF">
-     <gradient source="0xCCCCFF" dest="0xCCFFFF" angle="35" />
-     <counters time="true" actions="true" score="true" />
-    </container>
-    <window bgColor="0xFFFFFF" border="false" />
-   </settings>
-   <cells rows="2" cols="4" cellWidth="230.0" cellHeight="280.0" border="true" id="primary">
-    <style transparent="true" borderStroke="2.7" markerStroke="2.7">
-     <color foreground="0x000066" border="0x000066" />
-    </style>
-    <shaper class="@Rectangular" cols="4" rows="2" />
-    <cell id="0" border="false" />
-    <cell id="0" border="true" image="md_22.png" />
-    <cell id="0" txtAlign="middle,top" border="true" image="md_22.png">
-     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
-      <font family="Arial" size="18" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-    </cell>
-    <cell id="0" txtAlign="middle,top" border="false" />
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>44</p>
-    </cell>
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>23</p>
-    </cell>
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>45</p>
-    </cell>
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>55</p>
-    </cell>
-   </cells>
-   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
-    <style />
-    <shaper class="@Rectangular" cols="4" rows="2" />
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-    <cell image="img003.png" />
-    <cell />
-    <cell />
-    <cell />
-   </cells>
-   <scramble times="31" primary="false" />
-  </activity>
-  <activity class="@panels.Identify" name="Cubos_Barras_B" code="">
-   <description />
-   <messages>
-    <cell border="false" type="initial">
-     <style transparent="true">
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>É PARA SOMAR!</p>
-     <p>QUAL É A RESPOSTA CERTA? É SÓ CLICAR!</p>
-    </cell>
-    <cell type="final">
-     <style transparent="true">
-      <color foreground="0x000066" />
-     </style>
-     <p>VOCÊ ESTA AVANÇANDO!</p>
-    </cell>
-   </messages>
-   <settings margin="8" report="true" reportActions="false">
-    <container bgColor="0xFFFFFF">
-     <gradient source="0xCCCCFF" dest="0xCCFFFF" angle="35" />
-     <counters time="true" actions="true" score="true" />
-    </container>
-    <window bgColor="0xFFFFFF" border="false" />
-   </settings>
-   <cells rows="2" cols="4" cellWidth="230.0" cellHeight="280.0" border="true" id="primary">
-    <style transparent="true" borderStroke="2.7" markerStroke="2.7">
-     <color foreground="0x000066" border="0x000066" />
-    </style>
-    <shaper class="@Rectangular" cols="4" rows="2" />
-    <cell id="0" border="false" />
-    <cell id="0" border="true" image="15_.png" />
-    <cell id="0" txtAlign="middle,top" border="true" image="15.png">
-     <style transparent="true" margin="20" borderStroke="3.0" markerStroke="5.0">
-      <font family="Arial" size="18" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-    </cell>
-    <cell id="0" txtAlign="middle,top" border="false" />
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>12</p>
-    </cell>
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>32</p>
-    </cell>
-    <cell id="1" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>30</p>
-    </cell>
-    <cell id="0" border="true">
-     <style transparent="true" borderStroke="3.6" markerStroke="2.7">
-      <font family="Arial" size="28" />
-      <color foreground="0x000066" border="0x000066" />
-     </style>
-     <p>15</p>
-    </cell>
-   </cells>
-   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
-    <style />
-    <shaper class="@Rectangular" cols="4" rows="2" />
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-    <cell />
-    <cell image="img_009.png" />
-    <cell />
-   </cells>
-   <scramble times="31" primary="false" />
-  </activity>
   <activity class="@panels.Identify" name="Probleminha_Meninos_D" code="">
    <description />
    <messages>
@@ -1532,9 +1536,264 @@
    </cells>
    <scramble times="31" primary="false" />
   </activity>
+  <activity class="@panels.Identify" name="Desafio_dos_gatos" code="">
+   <description />
+   <messages>
+    <cell border="false" type="initial">
+     <style transparent="true">
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>QUAL É A RESPOSTA CERTA? É SÓ CLICAR!</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <color foreground="0x000066" />
+     </style>
+     <p>VOCÊ ESTA AVANÇANDO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <gradient source="0xCCCCFF" dest="0xCCFFFF" angle="35" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="false" />
+   </settings>
+   <cells rows="2" cols="4" cellWidth="400.0" cellHeight="300.0" border="true" id="primary">
+    <style transparent="true" borderStroke="2.7" markerStroke="2.7">
+     <color foreground="0x000066" border="0x000066" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell id="0" border="false" image="i_1402622.jpg" />
+    <cell id="0" border="false" image="i_1402623.jpg" />
+    <cell id="0" border="false" image="i_1402624.jpg" />
+    <cell id="0" border="false">
+     <p>ERA UMA VEZ, NUMA CASA CHEIA DE AMOR E ALEGRIA, CINCO GATOS FOFINHOS QUE ADORAVAM TOMAR LEITE JUNTOS. HAVIA O LÉO, UM GATINHO LARANJA COM BIGODES LONGOS; A MIMI, UMA GATINHA CINZA COM OLHOS GRANDES E BRILHANTES; O PIPO, UM GATINHO PRETO QUE ADORAVA PULAR; A NINA, UMA GATINHA BRANCA COMO A NEVE; E O BISCOITO, UM GATINHO MALHADO QUE ERA O MAIS TRAVESSO DE TODOS. TODOS OS DIAS, NA HORA DO LANCHE, ELES SE REUNIAM NA COZINHA E A DONA COLOCAVA UMA TIGELA GRANDE DE LEITE.</p>
+    </cell>
+    <cell id="0" border="false">
+     <style transparent="true" borderStroke="3.6" markerStroke="5.0">
+      <font family="Arial" size="22" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>QUANTOS GATOS APARECEM NA CENA [ A ]? </p>
+    </cell>
+    <cell id="0" image="ng33.png" />
+    <cell id="1" image="ng5.png" />
+    <cell id="0" image="ng8.png" />
+   </cells>
+   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell image="img003.png" />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="Desafio_dos_gatos_2" code="">
+   <description />
+   <messages>
+    <cell border="false" type="initial">
+     <style transparent="true">
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>QUAL É A RESPOSTA CERTA? É SÓ CLICAR!</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <color foreground="0x000066" />
+     </style>
+     <p>VOCÊ ESTA AVANÇANDO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <gradient source="0xCCCCFF" dest="0xCCFFFF" angle="35" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="false" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="400.0" cellHeight="300.0" border="true" id="primary">
+    <style transparent="true" borderStroke="2.7" markerStroke="2.7">
+     <color foreground="0x000066" border="0x000066" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell id="0" border="false" image="i_1402622.jpg" />
+    <cell id="0" border="false" image="i_1402623.jpg" />
+    <cell id="0" border="false" image="i_1402624.jpg" />
+    <cell id="0" border="false">
+     <style transparent="true" borderStroke="3.6" markerStroke="5.0">
+      <font family="Arial" size="20" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>QUANTOS GATOS ESTÃO SE AFASTANDO DO TIGELA NA CENA [ B ]?</p>
+    </cell>
+    <cell id="1" border="true" image="Captura de tela 2024-07-13 082519.png">
+     <style transparent="true" borderStroke="3.6" markerStroke="5.0">
+      <font family="Arial" size="22" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+    </cell>
+    <cell id="0" image="ng33.png" />
+   </cells>
+   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell image="img_009.png" />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="Desafio_dos_gatos_3" code="">
+   <description />
+   <messages>
+    <cell border="false" type="initial">
+     <style transparent="true">
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>QUAL É A RESPOSTA CERTA? É SÓ CLICAR!</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <color foreground="0x000066" />
+     </style>
+     <p>VOCÊ ESTA AVANÇANDO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <gradient source="0xCCCCFF" dest="0xCCFFFF" angle="35" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="false" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="400.0" cellHeight="300.0" border="true" id="primary">
+    <style transparent="true" borderStroke="2.7" markerStroke="2.7">
+     <color foreground="0x000066" border="0x000066" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell id="0" border="false" image="i_1402622.jpg" />
+    <cell id="0" border="false" image="i_1402623.jpg" />
+    <cell id="0" border="false" image="i_1402624.jpg" />
+    <cell id="0" border="false">
+     <style transparent="true" borderStroke="3.6" markerStroke="5.0">
+      <font family="Arial" size="20" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>QUANTOS GATOS SOBRARAM NA CENA [ C ] ?</p>
+    </cell>
+    <cell id="0" border="true" image="Captura de tela 2024-07-13 082519.png">
+     <style transparent="true" borderStroke="3.6" markerStroke="5.0">
+      <font family="Arial" size="22" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+    </cell>
+    <cell id="1" image="ng33.png" />
+   </cells>
+   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell image="img003.png" />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="Desafio_dos_gatos_5" code="">
+   <description />
+   <messages>
+    <cell border="false" type="initial">
+     <style transparent="true">
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>QUAL É A RESPOSTA CERTA? É SÓ CLICAR!</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <color foreground="0x000066" />
+     </style>
+     <p>VOCÊ ESTA AVANÇANDO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <gradient source="0xCCCCFF" dest="0xCCFFFF" angle="35" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="false" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="400.0" cellHeight="300.0" border="true" id="primary">
+    <style transparent="true" borderStroke="2.7" markerStroke="2.7">
+     <color foreground="0x000066" border="0x000066" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell id="0" border="false">
+     <style transparent="true" borderStroke="3.6" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>PODEMOS DIZER ENTÃO QUE:</p>
+    </cell>
+    <cell id="0" border="false">
+     <style transparent="true" borderStroke="3.6" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>____ GATOS MENOS ____ GATOS É IGUAL A_____GATOS.</p>
+    </cell>
+    <cell id="0" border="false" image="i_1402623.jpg" />
+    <cell id="0" border="false">
+     <style transparent="true" borderStroke="3.6" markerStroke="5.0">
+      <font family="Arial" size="20" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>QUAIS OS VALORES COMPLETAM OS ESPAÇOS?</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="3.6" markerStroke="5.0">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>5 - 3 = 2</p>
+    </cell>
+    <cell id="1">
+     <style transparent="true" borderStroke="3.6" markerStroke="5.0">
+      <font family="Arial" size="28" />
+      <color foreground="0x000066" border="0x000066" />
+     </style>
+     <p>5 - 2 = 3</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell image="img003.png" />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
  </activities>
  <mediaBag>
   <media name="Amanda-resized.jpg" file="amanda-resized.jpg" />
+  <media name="i_1402622.jpg" file="i_1402622.jpg" />
+  <media name="i_1402623.jpg" file="i_1402623.jpg" />
+  <media name="i_1402624.jpg" file="i_1402624.jpg" />
   <media name="img0015-resized.jpg" file="img0015-resized.jpg" />
   <media name="lara-resized.jpg" file="lara-resized.jpg" />
   <media name="10.png" file="10.png" />
@@ -1547,6 +1806,9 @@
   <media name="24.png" file="24.png" />
   <media name="3.png" file="3.png" />
   <media name="32.png" file="32.png" />
+  <media name="Captura de tela 2024-07-13 082519.png" file="captura_de_tela_2024-07-13_082519.png" />
+  <media name="Captura de tela 2024-07-13 085323.png" file="captura_de_tela_2024-07-13_085323.png" />
+  <media name="gatos1.png" file="gatos1.png" />
   <media name="img001.png" file="captura_de_tela_2024-06-23_073646.png" />
   <media name="img002.png" file="captura_de_tela_2024-06-23_090622.png" />
   <media name="img003.png" file="captura_de_tela_2024-06-23_092629.png" />
@@ -1559,6 +1821,9 @@
   <media name="md_14.png" file="md_14.png" />
   <media name="md_22.png" file="md_22.png" />
   <media name="md_26.png" file="md_26.png" />
+  <media name="ng33.png" file="captura_de_tela_2024-07-13_081433.png" />
+  <media name="ng5.png" file="captura_de_tela_2024-07-13_081256.png" />
+  <media name="ng8.png" file="captura_de_tela_2024-07-13_081345.png" />
  </mediaBag>
 </JClicProject>
 
