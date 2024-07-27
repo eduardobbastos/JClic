@@ -1,0 +1,99 @@
+{
+  "title": "MAT2A",
+  "author": "Eduardo Bastos (Professor de Matemática)",
+  "date": "23-06-2024",
+  "langCodes": [
+    "pt"
+  ],
+  "languages": {
+    "pt": "português"
+  },
+  "areaCodes": [
+    "mat"
+  ],
+  "areas": {
+    "pt": "mat"
+  },
+  "levelCodes": [
+    "INF",
+    "PRI"
+  ],
+  "levels": {
+    "pt": "INF, PRI"
+  },
+  "description": {
+    "pt": "ETIQUETA PARA REFÊNCIA DESTE TRABALHO: MAT2B\r\nUNIDADES TEMÁTICAS: Números\r\nOBJETOS DE CONHECIMENTO:Identificação de regularidade de sequências e determinação de elementos ausentes na sequência\r\nHABILIDADES:(EF02MA11) Descrever os elementos ausentes em sequências repetitivas e em sequências recursivas de números naturais, objetos ou figuras.\r"
+  },
+  "license": {
+    "pt": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "pt"
+  ],
+  "mainFile": "mat2b.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 36,
+  "mediaFiles": 53,
+  "totalSize": 3746714,
+  "files": [
+    "10.png",
+    "12704-1-resized.jpg",
+    "15.png",
+    "15_.png",
+    "2.png",
+    "24.png",
+    "3.png",
+    "32.png",
+    "amanda-resized.jpg",
+    "capae_95486-resized.jpg",
+    "captura_de_tela_2024-06-23_092629.png",
+    "captura_de_tela_2024-06-23_093454.png",
+    "captura_de_tela_2024-07-13_081256.png",
+    "captura_de_tela_2024-07-13_081345.png",
+    "captura_de_tela_2024-07-13_081433.png",
+    "captura_de_tela_2024-07-13_082519.png",
+    "captura_de_tela_2024-07-13_085323.png",
+    "captura_de_tela_2024-07-13_193648-resized.jpg",
+    "captura_de_tela_2024-07-13_194621.png",
+    "captura_de_tela_2024-07-13_195436.png",
+    "captura_de_tela_2024-07-13_200613.png",
+    "captura_de_tela_2024-07-13_204114.png",
+    "captura_de_tela_2024-07-13_204425.png",
+    "captura_de_tela_2024-07-21_090950.png",
+    "captura_de_tela_2024-07-21_093022.png",
+    "captura_de_tela_2024-07-21_093140.png",
+    "captura_de_tela_2024-07-21_115743.png",
+    "captura_de_tela_2024-07-21_115753.png",
+    "favicon.ico",
+    "i_1402527-resized.jpg",
+    "i_1402528.jpg",
+    "i_1402622.jpg",
+    "i_1402623.jpg",
+    "i_1402624.jpg",
+    "i_1402626.jpg",
+    "i_1402648.jpg",
+    "i_1420129.jpg",
+    "i_1427622.jpg",
+    "i_1427624.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "img0015-resized.jpg",
+    "img_006.png",
+    "img_007.png",
+    "img_008.png",
+    "img_009.png",
+    "imsmanifest.xml",
+    "index.html",
+    "lara-resized.jpg",
+    "mat2b.jclic",
+    "mat2b.jclic.js",
+    "md_12.png",
+    "md_14.png",
+    "md_22.png",
+    "md_26.png",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json"
+  ]
+}
